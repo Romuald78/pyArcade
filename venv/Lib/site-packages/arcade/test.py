@@ -1,0 +1,9 @@
+import array
+
+my_list = [3, 4, 5]
+my_array = array.array('i', my_list)
+b = my_array.tobytes()
+print(b)
+my_array[0] = 5
+print(b)
+
