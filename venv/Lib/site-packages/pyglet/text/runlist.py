@@ -36,16 +36,9 @@
 
 .. versionadded:: 1.1
 """
-from builtins import str
-from builtins import zip
-from builtins import next
-from builtins import object
-
-__docformat__ = 'restructuredtext'
-__version__ = '$Id: $'
 
 
-class _Run(object):
+class _Run:
     def __init__(self, value, count):
         self.value = value
         self.count = count
@@ -54,7 +47,7 @@ class _Run(object):
         return 'Run(%r, %d)' % (self.value, self.count)
 
 
-class RunList(object):
+class RunList:
     """List of contiguous runs of values.
 
     A `RunList` is an efficient encoding of a sequence of values.  For
@@ -233,7 +226,7 @@ class RunList(object):
         return str(list(self))
 
 
-class AbstractRunIterator(object):
+class AbstractRunIterator:
     """Range iteration over `RunList`.
 
     `AbstractRunIterator` objects allow any monotonically non-decreasing

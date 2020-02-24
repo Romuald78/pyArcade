@@ -35,17 +35,14 @@
 """
 Wrapper around the Linux FontConfig library. Used to find available fonts.
 """
-from builtins import object
-
-__docformat__ = 'restructuredtext'
-__version__ = '$Id$'
 
 from collections import OrderedDict
 from ctypes import *
 
 import pyglet.lib
-from pyglet.compat import asbytes, asstr
+from pyglet.util import asbytes, asstr
 from pyglet.font.base import FontException
+
 
 # fontconfig library definitions
 
@@ -108,7 +105,7 @@ class FcValue(Structure):
 # End of library definitions
 
 
-class FontConfig(object):
+class FontConfig:
     def __init__(self):
         self._fontconfig = self._load_fontconfig_library()
         self._search_cache = OrderedDict()
@@ -193,7 +190,7 @@ class FontConfig(object):
         return fontconfig
 
 
-class FontConfigPattern(object):
+class FontConfigPattern:
     def __init__(self, fontconfig, pattern=None):
         self._fontconfig = fontconfig
         self._pattern = pattern

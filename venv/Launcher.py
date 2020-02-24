@@ -114,6 +114,20 @@ class MyGame(arcade.Window):
             self.boxes[i].set_points([[-bSize,-bSize],[bSize,-bSize],[bSize,bSize],[-bSize,bSize]])
             self.boxes[i].update_animation(0)
             self.boxes[i].scale = 0.5
+
+        self.emit = arcade.Emitter(
+            center_xy        = (SCREEN_HEIGHT/2, SCREEN_WIDTH/2),
+            emit_controller  = arcade.EmitMaintainCount(400),
+            particle_factory = lambda emitter: arcade.FadeParticle(
+                filename_or_texture = arcade.make_circle_texture(30, arcade.color.WHITE),
+                change_xy           = arcade.rand_in_circle((0.0, 0.0), random.uniform(0.5,0.6)),
+                lifetime            = random.uniform(0.1, 5.0),
+                scale = 0.1,
+                start_alpha=100,
+                end_alpha=0,
+            ),
+        )
+
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -130,6 +144,10 @@ class MyGame(arcade.Window):
 
         # draw robot
         self.currentSprite.draw()
+
+
+
+        self.emit.draw()
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -198,9 +216,14 @@ class MyGame(arcade.Window):
                 dir = "left"
             self.currentSprite = self.robot["walk"][dir]
 
-        # update aniumation and position of the robot
+        # update animation and position of the robot
         self.currentSprite.update_animation(delta_time)
         self.currentSprite.set_position(self.circleX,self.circleY+60)
+
+
+        self.emit.center_x = self.circleX
+        self.emit.center_y = self.circleY + self.currentSprite.height*0.5
+        self.emit.update()
 
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
@@ -276,11 +299,19 @@ class MyGame(arcade.Window):
     def onAxisMove(self, gamepadNum, axisName, analogValue):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
         if axisName == 'x':
-            d = (SCREEN_WIDTH / 2)
-            self.circleX = d + d*analogValue
+            if analogValue >= 0.5:
+                self.move |= 8
+            elif analogValue <= -0.5:
+                self.move |= 4
+            else:
+                self.move &= ~12
         if axisName == 'y':
-            d = (SCREEN_HEIGHT / 2)
-            self.circleY = d - d*analogValue
+            if analogValue >= 0.5:
+                self.move |= 2
+            elif analogValue <= -0.5:
+                self.move |= 1
+            else:
+                self.move &= ~3
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 

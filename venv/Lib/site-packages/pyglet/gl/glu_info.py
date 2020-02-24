@@ -56,19 +56,15 @@ each GLUInfo::
 Note that GLUInfo only returns meaningful information if a context has been
 created.
 """
-from builtins import object
-
-__docformat__ = 'restructuredtext'
-__version__ = '$Id$'
 
 from ctypes import *
 import warnings
 
 from pyglet.gl.glu import *
-from pyglet.compat import asstr
+from pyglet.util import asstr
 
 
-class GLUInfo(object):
+class GLUInfo:
     """Information interface for the GLU library. 
 
     A default instance is created automatically when the first OpenGL context

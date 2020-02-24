@@ -32,7 +32,6 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 # ----------------------------------------------------------------------------
-# $Id:$
 
 """Formatted and unformatted document interfaces used by text layout.
 
@@ -164,11 +163,6 @@ of a ``None`` style is style- and application-dependent.
 
 .. versionadded:: 1.1
 """
-from builtins import next
-from builtins import object
-
-__docformat__ = 'restructuredtext'
-__version__ = '$Id: $'
 
 import re
 import sys
@@ -182,7 +176,7 @@ _is_pyglet_doc_run = hasattr(sys, "is_pyglet_doc_run") and sys.is_pyglet_doc_run
 STYLE_INDETERMINATE = 'indeterminate'
 
 
-class InlineElement(object):
+class InlineElement:
     """Arbitrary inline element positioned within a formatted document.
 
     Elements behave like a single glyph in the document.  They are
@@ -713,7 +707,7 @@ class _ElementIterator(runlist.RunIterator):
         self.start, self.end, self.value = next(self)
 
 
-class _FontStyleRunsRangeIterator(object):
+class _FontStyleRunsRangeIterator:
     # XXX subclass runlist
     def __init__(self, font_names, font_sizes, bolds, italics, dpi):
         self.zip_iter = runlist.ZipRunIterator(
@@ -737,7 +731,7 @@ class _FontStyleRunsRangeIterator(object):
                          dpi=self.dpi)
 
 
-class _NoStyleRangeIterator(object):
+class _NoStyleRangeIterator:
     # XXX subclass runlist
     def ranges(self, start, end):
         yield start, end, None

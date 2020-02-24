@@ -37,28 +37,22 @@
 
 http://www.w3.org/Graphics/GIF/spec-gif89a.txt
 """
-from __future__ import print_function
-from __future__ import division
-from builtins import object
-
-__docformat__ = 'restructuredtext'
-__version__ = '$Id$'
 
 import struct
 
 from pyglet.image.codecs import ImageDecodeException
 
 
-class GIFStream(object):
+class GIFStream:
     def __init__(self):
         self.images = []
 
 
-class GIFImage(object):
+class GIFImage:
     delay = None
 
 
-class GraphicsScope(object):
+class GraphicsScope:
     delay = None
 
 

@@ -21,13 +21,6 @@ python -m arcade.examples.drawing_primitives
 import arcade
 import os
 
-# Set the working directory (where we expect to find files) to the same
-# directory this .py file is in. You can leave this out of your own
-# code, but it is needed to easily run the examples using "python -m"
-# as mentioned at the top of this program.
-file_path = os.path.dirname(os.path.abspath(__file__))
-os.chdir(file_path)
-
 # Open the window. Set the window title and dimensions (width and height)
 arcade.open_window(600, 600, "Drawing Primitives Example")
 
@@ -154,10 +147,8 @@ arcade.draw_rectangle_filled(420, 160, 20, 40, arcade.color.BLUSH, 45)
 arcade.draw_text("draw_bitmap", 483, 3, arcade.color.BLACK, 12)
 texture = arcade.load_texture(":resources:images/space_shooter/playerShip1_orange.png")
 scale = .6
-arcade.draw_texture_rectangle(540, 120, scale * texture.width,
-                              scale * texture.height, texture, 0)
-arcade.draw_texture_rectangle(540, 60, scale * texture.width,
-                              scale * texture.height, texture, 45)
+arcade.draw_scaled_texture_rectangle(540, 120, texture, scale, 0)
+arcade.draw_scaled_texture_rectangle(540, 60, texture, scale, 45)
 
 # Finish the render.
 # Nothing will be drawn without this.
