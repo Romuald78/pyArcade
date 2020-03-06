@@ -3,223 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/license.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.2.5.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/draw_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/draw_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/drawing_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/drawing_support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/asteroid_smasher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/asteroid_smasher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/drawing_primitives.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/drawing_primitives.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/dual_stick_shooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/dual_stick_shooter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_dialogue_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_dialogue_box.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_text_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_text_box.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_fireworks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_fireworks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_stress.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_stress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_systems.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/particle_systems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/pymunk_apples.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/pymunk_apples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes_buffered.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes_buffered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins_background.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins_background.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_explosion.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_explosion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_face_left_or_right.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_face_left_or_right.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_animation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_rooms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_tiled_map_lights.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/view_screens_minimal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/view_screens_minimal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/isometric.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/isometric.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/particle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/particle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/physics_engines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/physics_engines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/read_tiled_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/read_tiled_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/shader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/shader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/shader_programs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list_lights.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list_old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/tilemap.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/tilemap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/window_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/window_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet-1.4.10.dist-info/zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/cocoa.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/cocoa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/win32.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/win32.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/xlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/app/xlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/cocoa.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/cocoa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/win32.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/win32.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/xlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/xlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/xlib_vidmoderestore.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/canvas/xlib_vidmoderestore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/clock.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/clock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/com.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/com.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/extlibs/png.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/extlibs/png.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/fontconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/fontconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/freetype.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/freetype.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/freetype_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/freetype_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/quartz.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/quartz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/ttf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/ttf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/win32.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/win32.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/win32query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/font/win32query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/agl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/agl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/gl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/gl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/gl_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/gl_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glext_arb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glext_arb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glext_nv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glext_nv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glu.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glu_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glu_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glx_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glx_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_arb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_arb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_mesa.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_mesa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_nv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/glxext_nv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_agl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_agl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_glx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_glx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_wgl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/lib_wgl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wgl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wgl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wgl_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wgl_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wglext_arb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wglext_arb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wglext_nv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/wglext_nv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/win32.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/win32.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/xlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/gl/xlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/allocation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexattribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexattribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexbuffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexbuffer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexdomain.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/graphics/vertexdomain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/animation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/atlas.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/atlas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/bmp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/bmp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/dds.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/dds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gdiplus.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gdiplus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gdkpixbuf2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gdkpixbuf2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gif.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/gif.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/pil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/pil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/quartz.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/quartz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/s3tc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/image/codecs/s3tc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/info.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/darwin_hid.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/darwin_hid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/directinput.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/directinput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/evdev.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/evdev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/evdev_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/evdev_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/wintab.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/wintab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/x11_xinput.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/x11_xinput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/x11_xinput_tablet.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/input/x11_xinput_tablet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/cocoapy/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/cocoapy/runtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/quartzkey.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/darwin/quartzkey.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/libwintab.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/libwintab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/winkey.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/win32/winkey.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/cursorfont.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/cursorfont.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xf86vmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xf86vmode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xinerama.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xinerama.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xinput.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xinput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xsync.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/libs/x11/xsync.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/buffered_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/buffered_logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavcodec.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavcodec.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libavutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libswresample.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libswresample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libswscale.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/ffmpeg_lib/libswscale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/wave.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/codecs/wave.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/adaptation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/adaptation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/directsound/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/listener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/adaptation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/adaptation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/lib_alc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/lib_alc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/lib_openal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/openal/lib_openal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/adaptation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/adaptation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/lib_pulseaudio.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/drivers/pulse/lib_pulseaudio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/instrumentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/instrumentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/synthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/media/synthesis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/gltf.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/gltf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/obj.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/model/codecs/obj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/sprite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/caret.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/caret.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/attributed.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/attributed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/plaintext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/plaintext.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/structured.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/formats/structured.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/layout.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/layout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/runlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/text/runlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_delegate.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_delegate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_textview.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_textview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/pyglet_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/systemcursor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/cocoa/systemcursor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/key.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/mouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/mouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/win32/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/win32/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/xlib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet/window/xlib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/NOTICE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2-0.1.16.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pyglet_ffmpeg2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -233,8 +16,8 @@
       <file leaf-file-name="Launcher.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="122" column="67" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
+            <state relative-caret-position="1050">
+              <caret line="266" selection-start-line="266" selection-end-line="266" />
               <folding>
                 <element signature="e#222#235#0" expanded="true" />
               </folding>
@@ -290,12 +73,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="PyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyArcade" type="462c0819:PsiDirectoryNode" />
+              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyArcade" type="462c0819:PsiDirectoryNode" />
+              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -356,14 +139,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25237092" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38671023" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13071896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -393,6 +175,36 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6650">
+          <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3025">
+          <caret line="121" column="87" selection-start-line="121" selection-start-column="87" selection-end-line="121" selection-end-column="87" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7325">
@@ -502,10 +314,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="122" column="67" selection-start-line="122" selection-start-column="67" selection-end-line="122" selection-end-column="67" />
+        <state relative-caret-position="1050">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
           <folding>
             <element signature="e#222#235#0" expanded="true" />
           </folding>
