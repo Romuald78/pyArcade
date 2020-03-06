@@ -26,19 +26,19 @@ class MyGame(arcade.Window):
     # ----------------------------------
     def __onButtonPressed(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        print("Button {}-{} pressed".format(idx, button))
+        ##print("Button {}-{} pressed".format(idx, button))
         self.onButtonPressed(idx, button)
     def __onButtonReleased(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        print("Button {}-{} released".format(idx, button))
+        ##print("Button {}-{} released".format(idx, button))
         self.onButtonReleased(idx, button)
     def __onCrossMove(self, _gamepad, x, y):
         idx = self.gamepads[_gamepad]
-        print("Cross {}-({}-{})".format(idx, x, y))
+        ##print("Cross {}-({}-{})".format(idx, x, y))
         self.onCrossMove(idx, x, y)
     def __onAxisMove(self, _gamepad, axis, value):
         idx = self.gamepads[_gamepad]
-        ## print("Axis {}-{}-{}".format(idx, axis, value))
+        ##print("Axis {}-{}-{}".format(idx, axis, value))
         self.onAxisMove(idx, axis, value)
 
 
@@ -48,6 +48,7 @@ class MyGame(arcade.Window):
     def __init__(self, width, height, title):
         #init application window
         super().__init__(width, height, title)
+
         # set application window background color
         arcade.set_background_color(arcade.color.BLACK)
         # Store gamepad list
@@ -122,7 +123,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onButtonPressed(self, gamepadNum, buttonNum):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        pass
+        StudentCode.onButtonEvent(gamepadNum,buttonNum,True)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -131,7 +132,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onButtonReleased(self, gamepadNum, buttonNum):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        pass
+        StudentCode.onButtonEvent(gamepadNum,buttonNum,False)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -140,7 +141,8 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onCrossMove(self, gamepadNum, xValue, yValue):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        pass
+        StudentCode.onAxisEvent(gamepadNum, "x", xValue)
+        StudentCode.onAxisEvent(gamepadNum, "y", yValue)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -149,12 +151,8 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onAxisMove(self, gamepadNum, axisName, analogValue):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        pass
+        StudentCode.onAxisEvent(gamepadNum,axisName,analogValue)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-
-
-
-
 
 
 ### ====================================================================================================
