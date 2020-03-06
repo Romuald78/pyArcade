@@ -50,7 +50,7 @@ def setup():
     var.dashCD = 0
     var.dash   = False
     # EMIT
-    var.emit = createParticleEmitter(var.robot.center_x,var.robot.center_y,100,50,0.1,2.5,(255,32,32,192),100,25)
+    var.emit = createParticleEmitter(var.robot.center_x,var.robot.center_y,100,50,0.25,2.5,(255,32,32,192),100,25)
     var.explodeStar = None
     var.getGem = None
 
