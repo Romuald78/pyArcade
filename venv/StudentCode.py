@@ -46,6 +46,7 @@ def setup():
 
     var.time = 0
 
+    var.score = 0
 
 
 
@@ -84,6 +85,7 @@ def update(deltaTime):
         if f.center_y < 100:
             if abs( var.robot.center_x - f.center_x) < 50:
                 var.fruits.remove(f)
+                var.score += 1
 
         if f.center_y < 0:
             var.fruits.remove(f)
@@ -98,6 +100,8 @@ def draw():
     for i in range(var.life):
         var.stars[i].draw()
 
+    arcade.draw_text("SCORE = "+str(var.score), SCREEN_WIDTH-25, SCREEN_HEIGHT-45, arcade.color.ORANGE, 30, anchor_x="right", anchor_y="top", bold=True    )
+
     for f in var.fruits:
         f.draw()
 
@@ -111,3 +115,4 @@ def onKeyEvent(key,isPressed):
     if key == arcade.key.ENTER:
         var.life = 3
         var.fruits = []
+        var.score = 0
