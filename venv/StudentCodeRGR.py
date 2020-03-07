@@ -106,8 +106,7 @@ def update(deltaTime):
             var.life -= 1
             y0 = SCREEN_HEIGHT - 50;
             x0 = 50 + 75 * var.life
-            var.explodeStar = createParticleBurst(x0, y0, 0.002, 0.10, 25, 0.25, 4.5, (255, 255, 32, 200),
-                                                  uniform(0.25, 0.5), 100, 0)
+            var.explodeStar = createParticleBurst(x0, y0, 0.025, 0.3, 75, 0.5, 3.0, (255, 0, 0, 255), 100, 25,f":resources:images/items/star.png")
         # PICK UP GEM
         elif g.center_y < 100:
             if abs( var.robot.center_x - g.center_x) < 50:
@@ -115,8 +114,7 @@ def update(deltaTime):
                 var.score += 1
                 y0 = g.center_y
                 x0 = g.center_x
-                var.explodeStar = createParticleBurst(x0, y0, 0.002, 0.15, 25, 0.25, 4.5, (255, 255, 32, 200),
-                                                      uniform(0.25, 0.5), 100, 0)
+                var.getGem = createParticleBurst(x0, y0, 0.015, 0.20, 75, 0.5, 3.0, (255, 255, 32, 255), 100, 50,f":resources:images/items/gemYellow.png")
     # DASH EMIT
     if var.emit:
         var.emit.center_x = var.robot.center_x+2

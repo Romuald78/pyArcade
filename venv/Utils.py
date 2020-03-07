@@ -20,15 +20,17 @@ def createSprite(filePath,size=None,isMaxRatio=False):
 
     return spr
 
-def createParticleBurst(x0,y0,partInterval,totalDuration,partSize,partScale,partSpeed,color,lifeTime,startAlpha,endAlpha):
+
+
+def createParticleBurst(x0,y0,partInterval,totalDuration,partSize,partScale,partSpeed,color,startAlpha,endAlpha,imagePath=None):
     e = arcade.Emitter(
         center_xy=(x0, y0),
         emit_controller=arcade.EmitterIntervalWithTime(partInterval, totalDuration),
         particle_factory=lambda emitter: arcade.FadeParticle(
-            filename_or_texture=arcade.make_circle_texture(partSize, color),
+            filename_or_texture=imagePath if imagePath is not None else arcade.make_circle_texture(partSize, color),
             change_xy=arcade.rand_in_circle((0.0, 0.0), partSpeed),
             scale=partScale,
-            lifetime=lifeTime,
+            lifetime=uniform(totalDuration/4, totalDuration),
             start_alpha=startAlpha,
             end_alpha=endAlpha,
         ),
