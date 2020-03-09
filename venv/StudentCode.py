@@ -5,6 +5,9 @@ import arcade
 from Utils import *
 from random import *
 import time
+
+SCREEN_WIDTH  = 960
+SCREEN_HEIGHT = 540
 var = Variables()
 
 

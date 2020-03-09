@@ -3,8 +3,6 @@ from random import *
 class Variables:
     pass
 
-SCREEN_WIDTH = 960
-SCREEN_HEIGHT = 540
 
 def createSprite(filePath,size=None,isMaxRatio=False):
     spr = arcade.AnimatedTimeSprite()

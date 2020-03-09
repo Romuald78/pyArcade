@@ -159,7 +159,7 @@ class MyGame(arcade.Window):
 ### MAIN PROCESS
 ### ====================================================================================================
 def main():
-    game = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE)
+    game = MyGame(StudentCode.SCREEN_WIDTH, StudentCode.SCREEN_HEIGHT, TITLE)
     game.setup()
     arcade.run()
 
