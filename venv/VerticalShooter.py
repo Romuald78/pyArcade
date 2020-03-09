@@ -30,14 +30,14 @@ def setup():
     var.ship = createSprite(f":resources:images/space_shooter/playerShip1_green.png",(50,50),True)
     var.move = [0,0,0,0]
     var.ship.center_x = SCREEN_WIDTH/2
-    var.ship.center_y = 50
+    var.ship.center_y = SCREEN_HEIGHT/2
     # Laser beams
-    var.nbLasers = 5;
+    var.nbLasers = 10;
     var.lasers = []
     # Enemies
     var.enemies = []
     var.enemyTimer = 0
-    var.enemyFireStep = 1.0
+    var.enemyFireStep = 0.5
     # life
     var.life = 5
     var.lifeShips = []
@@ -56,6 +56,8 @@ def setup():
     var.emits = []
     # score
     var.score = 0
+    # total time
+    var.globalTime = 0
     # -------------------------------------------------------------------
 
 
@@ -69,8 +71,10 @@ def update(deltaTime):
     var.ship.update()
 
     # each frame we increase the enemy fire rate
-    var.enemyFireStep += 0.001
+    var.enemyFireStep += 0.0001
 
+    #increase global time
+    var.globalTime += deltaTime
 
     if var.life > 0:
         # update movement
@@ -99,9 +103,9 @@ def update(deltaTime):
             # if the direction is correct
             if abs(var.turretX) > 0.5 or abs(var.turretY) > 0.5:
                 # if firing, reduce timer and create missile
-                if var.turretTimeStep >= 0.2:
+                if var.turretTimeStep >= 0.15:
                     var.turretTimeStep = 0
-                    missile = createSprite(f":resources:images/pinball/pool_cue_ball.png", (5, 5), True)
+                    missile = createSprite(f":resources:images/pinball/pool_cue_ball.png", (10, 10, True))
                     missile.center_x = var.ship.center_x
                     missile.center_y = var.ship.center_y
                     var.turretMissiles.append( (missile,var.turretX, var.turretY, "ship") )
@@ -117,32 +121,69 @@ def update(deltaTime):
     if var.life > 0:
         # increase enemy timer and check for enemy creation
         var.enemyTimer += deltaTime
-        if var.enemyTimer >= 1:
-            var.enemyTimer -= 1
+        if var.enemyTimer >= 1.5:
+            var.enemyTimer -= 1.5
             enemy = createSprite(f":resources:images/enemies/saw.png", (50, 50), False)
-            #set random position
-            enemy.center_x = randint(0,SCREEN_WIDTH)
-            enemy.center_y = SCREEN_WIDTH + 50
+
+            #set random params for enemy direction
+            enemy.center_x  = randint(0, SCREEN_WIDTH)
+            enemy.center_y  = randint(0, SCREEN_HEIGHT)
+            enemy.dirX      = 0
+            enemy.dirY      = 0
+            enemy.period    = randint(250, 1000) / 1000
+            enemy.amplitude = randint(10, 100)
+            # random direction
+            # d   0  1  2  3  4
+            # dx  0  0 -1 +1
+            # dy -1 +1  0  0
+            d = randint(0,3)
+            if d >= 2:
+                if d == 2:
+                    enemy.dirX = -1
+                    enemy.center_x = SCREEN_WIDTH
+                else:
+                    enemy.dirX = 1
+                    enemy.center_x = 0
+            else:
+                if d == 0:
+                    enemy.dirY = -1
+                    enemy.center_y = SCREEN_HEIGHT
+                else:
+                    enemy.dirY = 1
+                    enemy.center_y = 0
+            # Store refXY
+            enemy.refX = enemy.center_x
+            enemy.refY = enemy.center_y
             var.enemies.append(enemy)
 
     # update position for all enemies
     for e in var.enemies:
-        e.center_y -= deltaTime*60*3
+        # update X
+        if e.dirX != 0:
+            e.center_x += deltaTime*60*3*e.dirX
+        else:
+            e.center_x = e.refX #+ math.cos(var.globalTime * deltaTime * 60 / e.period) * e.amplitude
+        # update Y
+        if e.dirY != 0:
+            e.center_y += deltaTime*60*3*e.dirY
+        else:
+            e.center_y = e.refY #+ math.sin(var.globalTime * deltaTime * 60 / e.period) * e.amplitude
         # check for destroy
-        if e.center_y < 0:
+        if ((e.center_y < -50 or e.center_y > SCREEN_HEIGHT+50) and (e.dirY != 0)) or ((e.center_x < -50 or e.center_x > SCREEN_WIDTH+50) and (e.dirX != 0)):
             var.enemies.remove(e)
 
     # enemies fire randomly toward the ship direction
-    for e in var.enemies:
-        isFire = randint(0,10000)/100
-        if isFire <= var.enemyFireStep:
-            missile = createSprite(f":resources:images/pinball/pool_cue_ball.png", (5, 5), True)
-            missile.center_x = e.center_x
-            missile.center_y = e.center_y
-            dx = var.ship.center_x-e.center_x
-            dy = var.ship.center_y-e.center_y
-            nrm = math.sqrt(dx*dx+dy*dy)
-            var.turretMissiles.append((missile, dx/nrm, dy/nrm, "enemy"))
+    if var.life > 0:
+        for e in var.enemies:
+            isFire = randint(0,10000)/100
+            if isFire <= var.enemyFireStep:
+                missile = createSprite(f":resources:images/items/coinGold.png", (20, 20), True)
+                missile.center_x = e.center_x
+                missile.center_y = e.center_y
+                dx = var.ship.center_x-e.center_x
+                dy = var.ship.center_y-e.center_y
+                nrm = math.sqrt(dx*dx+dy*dy)
+                var.turretMissiles.append((missile, dx/nrm, dy/nrm, "enemy"))
 
     # update BG
     var.bg1.center_y -= 2
@@ -179,15 +220,21 @@ def update(deltaTime):
                 var.life -= 1
                 emit = createParticleBurst(var.ship.center_x, var.ship.center_y, 0.025, 0.15, 100, 0.5, 3.0, (255, 128, 128, 255), 100, 25)
                 var.emits.append(emit)
+                x0 = 30 + 50 * var.life
+                y0 = SCREEN_HEIGHT - 30
+                emit = createParticleBurst(x0, y0, 0.025, 0.5, 100, 0.75, 3.0, (255, 128, 128, 255), 100, 25,f":resources:images/space_shooter/playerLife1_orange.png")
+                var.emits.append(emit)
 
     # check collisions between ship and enemies
     for e in var.enemies:
         if abs(var.ship.center_x-e.center_x) < 50 and abs(var.ship.center_y-e.center_y) < 40:
             var.enemies.remove(e)
             var.life -= 1
+            emit = createParticleBurst(var.ship.center_x, var.ship.center_y, 0.025, 0.15, 100, 0.5, 3.0,(255, 128, 128, 255), 100, 25)
+            var.emits.append(emit)
             x0 = 30 + 50 * var.life
             y0 = SCREEN_HEIGHT - 30
-            emit = createParticleBurst(x0, y0, 0.025, 0.3, 75, 0.5, 3.0, (255, 128, 128, 255), 100, 25,f":resources:images/space_shooter/playerLife1_orange.png")
+            emit = createParticleBurst(x0, y0, 0.025, 0.5, 100, 0.75, 3.0, (255, 128, 128, 255), 100, 25,f":resources:images/space_shooter/playerLife1_orange.png")
             var.emits.append(emit)
 
     # update emitters
@@ -217,7 +264,8 @@ def draw():
     for m in var.turretMissiles:
         m[0].draw()
     # draw ship
-    var.ship.draw()
+    if var.life > 0:
+        var.ship.draw()
     # draw enemies
     for e in var.enemies:
         e.draw()
@@ -272,10 +320,11 @@ def onKeyEvent(key,isPressed):
         var.life = 5
         var.score = 0
         var.ship.center_x = SCREEN_WIDTH / 2
-        var.ship.center_y = 50
+        var.ship.center_y = SCREEN_HEIGHT / 2
         var.emits = []
+        var.turretMissiles = []
         var.enemies = []
-        var.enemyFireStep = 1.0
+        var.enemyFireStep = 0.5
     #-------------------------------------------------------------------
 
 
@@ -286,12 +335,13 @@ def onKeyEvent(key,isPressed):
 def onButtonEvent(gamepadNum,buttonNum,isPressed):
     #-------------------------------------------------------------------
     #Laser shoot
-    if isPressed:
-        if len(var.lasers) < var.nbLasers:
-            laz = createSprite(f":resources:images/space_shooter/laserRed01.png",(50,50),False)
-            laz.center_x = var.ship.center_x
-            laz.center_y = var.ship.center_y
-            var.lasers.append(laz)
+    if var.life > 0:
+        if isPressed:
+            if len(var.lasers) < var.nbLasers:
+                laz = createSprite(f":resources:images/space_shooter/laserRed01.png",(50,50),False)
+                laz.center_x = var.ship.center_x
+                laz.center_y = var.ship.center_y
+                var.lasers.append(laz)
     #-------------------------------------------------------------------
 
 

@@ -4,8 +4,6 @@
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/StudentCodeRGR.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Utils.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +24,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="VerticalShooter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/VerticalShooter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
+              <folding>
+                <element signature="e#222#235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentCode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/StudentCode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#222#235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -37,17 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>+= 5</find>
-      <find>+str</find>
-      <find>emit</find>
-      <find>random.</find>
-      <find>unif</find>
-      <find>.update</find>
-      <find>.RED</find>
-      <find>life =</find>
-      <find>(25</find>
-      <find>particle</find>
-      <find>explodes</find>
       <find>particleB</find>
       <find>+=</find>
       <find>enemy</find>
@@ -56,10 +67,7 @@
       <find>*3</find>
       <find>*75</find>
       <find>...</find>
-      <find>laser</find>
       <find>or</find>
-      <find>or</find>
-      <find>0.25</find>
       <find>3</find>
       <find>randint(0</find>
       <find>.ENTER</find>
@@ -67,6 +75,20 @@
       <find>burst</find>
       <find>emits</find>
       <find>missiles</find>
+      <find>&lt; 5</find>
+      <find>len(var.</find>
+      <find>0.25</find>
+      <find>creat</find>
+      <find>fireste</find>
+      <find>create</find>
+      <find>enemyTi</find>
+      <find>var.ship.center</find>
+      <find>.key.</find>
+      <find>saw.</find>
+      <find>d =</find>
+      <find>+= 0.00</find>
+      <find>ship and</find>
+      <find>laser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,8 +100,8 @@
         <option value="$PROJECT_DIR$/venv/StudentCodeRGR.py" />
         <option value="$PROJECT_DIR$/venv/Utils.py" />
         <option value="$PROJECT_DIR$/venv/CatchTheGems.py" />
-        <option value="$PROJECT_DIR$/venv/VerticalShooter.py" />
         <option value="$PROJECT_DIR$/venv/StudentCode.py" />
+        <option value="$PROJECT_DIR$/venv/VerticalShooter.py" />
         <option value="$PROJECT_DIR$/venv/Launcher.py" />
       </list>
     </option>
@@ -96,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,7 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -258,6 +280,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -410,30 +439,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/VerticalShooter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="138" column="35" lean-forward="true" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/CatchTheGems.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" selection-start-line="8" selection-end-line="10" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#222#235#0" expanded="true" />
           </folding>
@@ -445,6 +454,26 @@
         <state>
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/StudentCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/VerticalShooter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
