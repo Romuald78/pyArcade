@@ -43,7 +43,7 @@ def setup():
         var.targets.append(tgt)
     # GENERATION
     var.timer = 0
-    var.timeStep = 2.0
+    var.timeStep = 3.5
     var.nextTempo = randint(1,4);
     # note list
     var.notes = []
@@ -52,6 +52,8 @@ def setup():
     # score
     var.nbHits = 0
     var.cumul = 0
+    # game time
+    var.gameTime = 3 * 60 # 3 minutes
     #-------------------------------------------------------------------
 
 
@@ -62,35 +64,45 @@ def setup():
 def update(deltaTime):
     # -------------------------------------------------------------------
 
+    # decrease gameTime
+    if var.gameTime > 0:
+        var.gameTime -= deltaTime
+    else:
+        var.gameTime = 0
+
+    # decrease timeStep
+    var.timeStep = ((var.gameTime * 2.0) / 180) + 1.5
+
     # INCREASE TIMER and create notes
     var.timer += deltaTime
-    if var.timer >= var.timeStep/var.nextTempo:
-        var.timer = 0
-        var.nextTempo = randint(1,4)
-        # create gem in random direction (between 1 and 2 directions)
-        nbNotes = randint(1,2)
-        # create first note
-        dir1 = randint(0,3)
-        note = createSprite(NOTES[dir1],(50,50), True)
-        nx = var.targets[dir1].center_x - (SCREEN_WIDTH/2)
-        ny = var.targets[dir1].center_y - (SCREEN_HEIGHT/2)
-        note.center_x = SCREEN_WIDTH/2 + 8*nx;
-        note.center_y = SCREEN_HEIGHT/2 + 8*ny;
-        note.angle = ANGLES[dir1]
-        var.notes.append( [note,dir1] )
-        # create second note if needed
-        if nbNotes == 2:
-            dir2 = randint(1, 2)
-            if dir2 == 2:
-                dir2 = 3
-            dir2 = (dir1 + dir2)%4
-            note = createSprite(NOTES[dir2], (50, 50), True)
-            nx = var.targets[dir2].center_x - (SCREEN_WIDTH / 2)
-            ny = var.targets[dir2].center_y - (SCREEN_HEIGHT / 2)
-            note.center_x = SCREEN_WIDTH / 2 + 8 * nx;
-            note.center_y = SCREEN_HEIGHT / 2 + 8 * ny;
-            note.angle = ANGLES[dir2]
-            var.notes.append([note, dir2])
+    if var.gameTime > 0:
+        if var.timer >= var.timeStep/var.nextTempo:
+            var.timer = 0
+            var.nextTempo = randint(1,4)
+            # create gem in random direction (between 1 and 2 directions)
+            nbNotes = randint(1,2)
+            # create first note
+            dir1 = randint(0,3)
+            note = createSprite(NOTES[dir1],(50,50), True)
+            nx = var.targets[dir1].center_x - (SCREEN_WIDTH/2)
+            ny = var.targets[dir1].center_y - (SCREEN_HEIGHT/2)
+            note.center_x = SCREEN_WIDTH/2 + 8*nx;
+            note.center_y = SCREEN_HEIGHT/2 + 8*ny;
+            note.angle = ANGLES[dir1]
+            var.notes.append( [note,dir1] )
+            # create second note if needed
+            if nbNotes == 2:
+                dir2 = randint(1, 2)
+                if dir2 == 2:
+                    dir2 = 3
+                dir2 = (dir1 + dir2)%4
+                note = createSprite(NOTES[dir2], (50, 50), True)
+                nx = var.targets[dir2].center_x - (SCREEN_WIDTH / 2)
+                ny = var.targets[dir2].center_y - (SCREEN_HEIGHT / 2)
+                note.center_x = SCREEN_WIDTH / 2 + 8 * nx;
+                note.center_y = SCREEN_HEIGHT / 2 + 8 * ny;
+                note.angle = ANGLES[dir2]
+                var.notes.append([note, dir2])
 
     # move notes
     for n in var.notes:
@@ -101,6 +113,7 @@ def update(deltaTime):
     for n in var.notes:
         if abs(n[0].center_x-(SCREEN_WIDTH/2)) < 10 and abs(n[0].center_y-(SCREEN_HEIGHT/2)) < 10:
             var.notes.remove(n)
+            var.nbHits += 1
 
     # press button events (SCALE)
     for i in range(len(var.buttons)):
@@ -126,7 +139,7 @@ def update(deltaTime):
                             closestNote = n
                 if closestNote != None:
                     var.notes.remove(closestNote)
-                    delta = max(0, 100-abs(minDist))
+                    delta = 1.0*max(0, 100-abs(minDist))
                     var.cumul += delta
         elif var.targets[i].scale > 0.25:
             var.targets[i].scale -= 0.20
@@ -159,7 +172,14 @@ def draw():
         n[0].draw()
     # draw score
     if var.nbHits > 0:
-        arcade.draw_text("SCORE = "+str(var.cumul/var.nbHits)+"%", SCREEN_WIDTH-25, SCREEN_HEIGHT-45, arcade.color.ORANGE, 30, anchor_x="right", anchor_y="top", bold=True    )
+        perc = round(var.cumul/var.nbHits,2)
+        arcade.draw_text("SCORE = "+str(perc)+"%", SCREEN_WIDTH-25, SCREEN_HEIGHT-60, arcade.color.ORANGE, 30, anchor_x="right", anchor_y="top", bold=True    )
+    # draw game time
+    gt = round(var.gameTime, 1)
+    arcade.draw_text("TIME = " + str(gt) +" sec.", SCREEN_WIDTH - 25, SCREEN_HEIGHT - 30, arcade.color.ORANGE, 30,anchor_x="right", anchor_y="top", bold=True)
+    # Draw finish game
+    if var.gameTime <= 0 and len(var.notes) == 0:
+        arcade.draw_text("GAME OVER", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, arcade.color.ORANGE, 100, anchor_x="center", anchor_y="center", bold=True)
     #-------------------------------------------------------------------
 
 
@@ -178,6 +198,20 @@ def onKeyEvent(key,isPressed):
     if key == arcade.key.LEFT:
         var.buttons[3] = isPressed
 
+    if key == arcade.key.ENTER and isPressed:
+        # GENERATION
+        var.timer = 0
+        var.timeStep = 3.5
+        var.nextTempo = randint(1, 4);
+        # note list
+        var.notes = []
+        # buttons events
+        var.buttons = [False, False, False, False]
+        # score
+        var.nbHits = 0
+        var.cumul = 0
+        # game time
+        var.gameTime = 3 * 60  # 3 minutes
     #-------------------------------------------------------------------
 
 
@@ -187,7 +221,14 @@ def onKeyEvent(key,isPressed):
 ### ====================================================================================================
 def onButtonEvent(gamepadNum,buttonNum,isPressed):
     #-------------------------------------------------------------------
-    pass
+    if buttonNum == 3:
+        var.buttons[0] = isPressed
+    if buttonNum == 1:
+        var.buttons[1] = isPressed
+    if buttonNum == 0:
+        var.buttons[2] = isPressed
+    if buttonNum == 2:
+        var.buttons[3] = isPressed
     #-------------------------------------------------------------------
 
 
