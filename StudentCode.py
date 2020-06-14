@@ -1,14 +1,20 @@
 ### ====================================================================================================
 ### IMPORTS
 ### ====================================================================================================
-import arcade
-from Utils import *
-from random import *
-import time
+# -------------------------------------------------------------------
+from utils import *
+# -------------------------------------------------------------------
 
+
+
+### ====================================================================================================
+### PARAMETERS
+### ====================================================================================================
+# -------------------------------------------------------------------
 SCREEN_WIDTH  = 960
 SCREEN_HEIGHT = 540
-var = Variables()
+var  = {}
+# -------------------------------------------------------------------
 
 
 
@@ -16,6 +22,15 @@ var = Variables()
 ### YOUR OWN FUNCTIONS HERE
 ### ====================================================================================================
 # -------------------------------------------------------------------
+def moveCharacter(delta):
+    if var["moveL"] == True:
+        var["robot"].center_x -= 5 * 60 * delta
+    if var["moveR"] == True:
+        var["robot"].center_x += 5 * 60 * delta
+
+def checkScreenBorders():
+    var["robot"].center_x = max(0           +50, var["robot"].center_x)
+    var["robot"].center_x = min(SCREEN_WIDTH-50, var["robot"].center_x)
 # -------------------------------------------------------------------
 
 
@@ -26,10 +41,13 @@ var = Variables()
 def setup():
     #-------------------------------------------------------------------
     # ROBOT SPRITE
-    var.robot = createSprite(f":resources:images/animated_characters/robot/robot_idle.png",(200,200))
+    var["robot"] = createSprite(f":resources:images/animated_characters/robot/robot_idle.png",(200,200))
     # robot position
-    var.robot.center_x = 100
-    var.robot.center_y = 100
+    var["robot"].center_x = 100
+    var["robot"].center_y = 100
+    # Robot movement
+    var["moveL"] = False
+    var["moveR"] = False
     #-------------------------------------------------------------------
 
 
@@ -39,7 +57,8 @@ def setup():
 ### ====================================================================================================
 def update(deltaTime):
     # -------------------------------------------------------------------
-    pass
+    moveCharacter(deltaTime)
+    checkScreenBorders()
     #-------------------------------------------------------------------
 
 
@@ -49,7 +68,7 @@ def update(deltaTime):
 ### ====================================================================================================
 def draw():
     #-------------------------------------------------------------------
-    var.robot.draw()
+    var["robot"].draw()
     #-------------------------------------------------------------------
 
 
@@ -64,6 +83,11 @@ def onKeyEvent(key,isPressed):
             print("SPACE KEY has been pressed !")
         else:
             print("SPACE KEY has been released !")
+    if key == arcade.key.LEFT:
+        var["moveL"] = isPressed
+    if key == arcade.key.RIGHT:
+        var["moveR"] = isPressed
+
     #-------------------------------------------------------------------
 
 

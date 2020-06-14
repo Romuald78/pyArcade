@@ -1,7 +1,6 @@
 import arcade
 from random import *
-class Variables:
-    pass
+
 
 
 def createSprite(filePath,size=None,isMaxRatio=False):
