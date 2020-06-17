@@ -3,6 +3,7 @@
 ### ====================================================================================================
 import arcade
 import StudentCode
+import os
 
 
 ### ====================================================================================================
@@ -156,6 +157,10 @@ class MyGame(arcade.Window):
 ### MAIN PROCESS
 ### ====================================================================================================
 def main():
+    # add current file path
+    file_path = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(file_path)
+
     game = MyGame(StudentCode.SCREEN_WIDTH, StudentCode.SCREEN_HEIGHT, TITLE)
     game.setup()
     arcade.run()

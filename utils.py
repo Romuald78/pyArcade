@@ -1,12 +1,14 @@
 import arcade
 from random import *
 
+from arcade import AnimationKeyframe
 
 
-def createSprite(filePath,size=None,isMaxRatio=False):
+def createFixedSprite(filePath, size=None, isMaxRatio=False):
+    # load texture for sprite
     spr = arcade.AnimatedTimeSprite()
-    spr.textures = []
-    spr.textures.append(arcade.load_texture(filePath))
+    spr.append_texture(arcade.load_texture(filePath))
+    # set dimensions
     spr.update_animation()
     if size != None:
         if isMaxRatio:
@@ -14,9 +16,29 @@ def createSprite(filePath,size=None,isMaxRatio=False):
         else:
             ratio = min(size[0]/spr.width, size[1]/spr.height)
         spr.scale = ratio
-
     return spr
 
+
+def createAnimatedSprite(filePath, spriteBox, size=None, isMaxRatio=False):
+    # get sprite box (nb sprites X, nb Y, size X size Y)
+    nbX, nbY, szW, szH = spriteBox
+    # Instanciate sprite object
+    spr = arcade.AnimatedTimeSprite()
+    # in mode Horizontal
+    for y in range(nbY):
+        for x in range(nbX):
+            tex = arcade.load_texture(filePath, x * szW, y * szH, szW, szH)
+            spr.textures.append(tex)
+    # set dimensions
+    spr.update_animation()
+    if size != None:
+        if isMaxRatio:
+            ratio = max(size[0] / spr.width, size[1] / spr.height)
+        else:
+            ratio = min(size[0]/spr.width, size[1]/spr.height)
+        spr.scale = ratio
+    # return sprite object
+    return spr
 
 
 def createParticleBurst(x0,y0,partInterval,totalDuration,partSize,partScale,partSpeed,color,startAlpha,endAlpha,imagePath=None):
