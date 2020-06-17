@@ -122,7 +122,7 @@ def addNewFish():
     n     = randint(0,5)
     # set init time to make the fish appear a little bit higher on the screen (behind the penguin)
     hMax  = random()*700
-    time  = speed*(20/hMax)
+    time  = speed*0.05
     y = SCREEN_HEIGHT
     tex = createAnimatedSprite("./images/fishes_224x128.png", (6, 1, 224, 128), (128, 128))
     tex.set_texture(n)
