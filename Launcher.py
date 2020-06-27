@@ -24,19 +24,15 @@ class MyGame(arcade.Window):
     # ----------------------------------
     def __onButtonPressed(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        ##print("Button {}-{} pressed".format(idx, button))
         self.onButtonPressed(idx, button)
     def __onButtonReleased(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        ##print("Button {}-{} released".format(idx, button))
         self.onButtonReleased(idx, button)
     def __onCrossMove(self, _gamepad, x, y):
         idx = self.gamepads[_gamepad]
-        ##print("Cross {}-({}-{})".format(idx, x, y))
         self.onCrossMove(idx, x, y)
     def __onAxisMove(self, _gamepad, axis, value):
         idx = self.gamepads[_gamepad]
-        ##print("Axis {}-{}-{}".format(idx, axis, value))
         self.onAxisMove(idx, axis, value)
 
 
