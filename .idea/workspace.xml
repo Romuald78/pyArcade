@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/collisions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudentCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentCode.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -32,8 +29,8 @@
       <file leaf-file-name="StudentCode.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StudentCode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="225" column="18" lean-forward="true" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
+            <state relative-caret-position="378">
+              <caret line="443" column="18" selection-start-line="443" selection-start-column="18" selection-end-line="443" selection-end-column="18" />
               <folding>
                 <element signature="e#292#311#0" expanded="true" />
               </folding>
@@ -70,9 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>border</find>
-      <find>fishcirc</find>
-      <find>splash</find>
       <find>.color</find>
       <find>192</find>
       <find>collidin</find>
@@ -100,6 +94,9 @@
       <find>20</find>
       <find>40</find>
       <find>var[&quot;scor</find>
+      <find>arrows</find>
+      <find>niw</find>
+      <find>dateti</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,13 +227,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23182297" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26797387" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26797387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -606,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StudentCode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="225" column="18" lean-forward="true" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
+        <state relative-caret-position="378">
+          <caret line="443" column="18" selection-start-line="443" selection-start-column="18" selection-end-line="443" selection-end-column="18" />
           <folding>
             <element signature="e#292#311#0" expanded="true" />
           </folding>

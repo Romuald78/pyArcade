@@ -6,7 +6,7 @@ from utils import *
 from collisions import *
 from random import *
 import math
-# -------------------------------------------------------------------
+import time
 # -------------------------------------------------------------------
 
 
@@ -433,7 +433,42 @@ def draw():
     drawParallax(-1)
     drawDebug()
     drawHUD()
-    #-------------------------------------------------------------------
+
+    if var["startFlag"]==False:
+        # the game has not started
+        milliseconds = int(round(time.time() * 1000))
+        arcade.draw_rectangle_filled(SCREEN_WIDTH//2,SCREEN_HEIGHT//2,SCREEN_WIDTH,SCREEN_HEIGHT,(0,0,0,128))
+
+        msg  = "Gamepad Commands : \n"
+        xRef = 16
+        yRef = 150
+        arcade.draw_text(msg, 16, yRef, (255,255,255,192), font_size=32, align="left")
+
+        msg  = "- Move Left : ANALOG STICK \n"
+        msg += "- Move Right : ANALOG STICK \n"
+        msg += "- Slide : ANY BUTTON   \n"
+        msg += "- Start new game : "
+        if milliseconds % 2000 < 1000:
+            msg += "START BUTTON "
+        msg += "\n"
+        yRef -= 56
+        arcade.draw_text(msg, xRef+16, yRef, (255,255,255,192), font_size=16, align="left")
+
+        msg  = "Keyboard Commands : \n"
+        yRef -= 56
+        arcade.draw_text(msg, xRef, yRef, (255, 255, 255, 192), font_size=32, align="left")
+
+        msg  = "- Move Left : LEFT ARROW  \n"
+        msg += "- Move Right : RIGHT ARROW \n"
+        msg += "- Slide : SPACE KEY   \n"
+        msg += "- Start new game : "
+        if milliseconds % 2000 < 1000:
+            msg += "ENTER KEY   "
+        msg += "\n"
+        yRef -= 56
+        arcade.draw_text(msg, xRef+16, yRef, (255,255,255,192), font_size=16, align="left")
+
+#-------------------------------------------------------------------
 
 
 
