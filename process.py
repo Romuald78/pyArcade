@@ -131,8 +131,11 @@ class Process:
     def setup(self):
         # character animation
         sz = (self.CHAR_W,self.CHAR_W)
+
         runAnim  = createAnimatedSprite("images/characters/girl.png", (7,1,170,250), 1, 6, frameduration=1/20, size=sz, isMaxRatio=True)
         idleAnim = createAnimatedSprite("images/characters/girl.png", (7,1,170,250), 0, 0, frameduration=1/20, size=sz, isMaxRatio=True)
+
+
         allAnims = {"idle" : idleAnim, "run":runAnim}
         # init state
         state = "idle"
@@ -159,7 +162,6 @@ class Process:
 
         # candy list
         self.candies = []
-
 
 
 

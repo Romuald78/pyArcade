@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentCode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collisions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/barElt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/clouds_384x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fishes_224x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/penguin_slide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/penguin_walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/splash_192x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/winter06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds/bloup.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds/splash.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/characters/penguin_walk.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/characters/penguin_walk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/items/fishes_224x128.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/items/fishes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter01.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter02.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter03.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter04.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter05.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/winter/winter06.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/winter/winter06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +26,8 @@
       <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+            <state relative-caret-position="694">
+              <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
               <folding>
                 <element signature="e#222#235#0" expanded="true" />
               </folding>
@@ -67,10 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>draw(</find>
-      <find>color</find>
-      <find>__ini</find>
-      <find>COLORS</find>
       <find>spee</find>
       <find>CELL_SIZ</find>
       <find>self.speed</find>
@@ -97,6 +81,10 @@
       <find>.png</find>
       <find>collidin</find>
       <find>candi</find>
+      <find>paralla</find>
+      <find>parallax/</find>
+      <find>candies.pn</find>
+      <find>#</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,7 +224,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28213507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28213507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -520,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+        <state relative-caret-position="694">
+          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
           <folding>
             <element signature="e#222#235#0" expanded="true" />
           </folding>
