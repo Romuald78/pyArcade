@@ -5,7 +5,25 @@
       <change afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentCode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/collisions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/barElt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/clouds_384x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fishes_224x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/penguin_slide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/penguin_walk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/splash_192x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/winter06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/bloup.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sounds/splash.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,53 +35,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentCode.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StudentCode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding>
-                <element signature="e#292#311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+              <folding>
+                <element signature="e#222#235#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Launcher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Launcher.py">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2079">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collisions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collisions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="459">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -79,36 +67,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.color</find>
-      <find>192</find>
-      <find>collidin</find>
-      <find>destroy</find>
-      <find>.remove</find>
-      <find>genera</find>
-      <find>collision</find>
-      <find>HUD</find>
-      <find>fishes&quot;</find>
-      <find>red )</find>
-      <find>clouds.</find>
-      <find>createH</find>
-      <find>clouds</find>
-      <find>3,</find>
-      <find>movepa</find>
-      <find>offset&quot;]</find>
-      <find>+=</find>
-      <find>moveClou</find>
+      <find>draw(</find>
+      <find>color</find>
+      <find>__ini</find>
+      <find>COLORS</find>
+      <find>spee</find>
+      <find>CELL_SIZ</find>
+      <find>self.speed</find>
+      <find>dmax</find>
+      <find>move</find>
+      <find>forw</find>
+      <find>speem²</find>
+      <find>BODY_S</find>
+      <find>modifS</find>
+      <find>cut</find>
+      <find>print</find>
       <find>speed</find>
+      <find>satura</find>
+      <find>SPEED</find>
+      <find>,50</find>
+      <find>1/</find>
+      <find>250,</find>
+      <find>0.25</find>
+      <find>*dt</find>
+      <find>spd</find>
       <find>createC</find>
-      <find>Coding</find>
-      <find>drawdebu</find>
-      <find>moveL</find>
-      <find>.ENTER</find>
-      <find>20</find>
-      <find>40</find>
-      <find>var[&quot;scor</find>
-      <find>arrows</find>
-      <find>niw</find>
-      <find>dateti</find>
+      <find>update</find>
+      <find>parall</find>
+      <find>.png</find>
+      <find>collidin</find>
+      <find>candi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,10 +116,11 @@
         <option value="$PROJECT_DIR$/venv/Include/__init__.py" />
         <option value="$PROJECT_DIR$/lifebar.py" />
         <option value="$PROJECT_DIR$/collisions.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/Launcher.py" />
-        <option value="$PROJECT_DIR$/process.py" />
         <option value="$PROJECT_DIR$/StudentCode.py" />
+        <option value="$PROJECT_DIR$/snake.py" />
+        <option value="$PROJECT_DIR$/Launcher.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/process.py" />
       </list>
     </option>
   </component>
@@ -147,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,15 +143,11 @@
               <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
               <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="sounds" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -234,20 +218,29 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23182297" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15437302" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26797387" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28213507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,47 +306,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4374">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2214">
@@ -365,20 +325,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1107">
@@ -403,13 +354,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -418,13 +363,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -443,9 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,19 +398,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -487,9 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,43 +429,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="52" column="89" selection-start-line="52" selection-start-column="89" selection-end-line="52" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,43 +487,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collisions.py">
+    <entry file="file://$PROJECT_DIR$/collisions.py" />
+    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1798430541/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="215">
+          <caret line="3628" column="8" selection-start-line="3628" selection-start-column="8" selection-end-line="3628" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="1000" selection-start-line="1000" selection-end-line="1000" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2079">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="-334">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="e#292#311#0" expanded="true" />
+            <element signature="e#222#235#0" expanded="true" />
           </folding>
         </state>
       </provider>

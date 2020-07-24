@@ -1,0 +1,64 @@
+============================================
+MAIN
+============================================
+keeping a list up to date with all used variables
+this list contains types, names, and description of each variable
+
+
+============================================
+STEPS
+============================================
+single sprite + draw
+add background sprite
+add position variable
+key event to update position + draw sprite onto position
+controller event to update position
+anim sprite enable animation when moving and idle when stopped
+----------------------------
+add item creation function (speed and initPosition) (+activation when space bar is pressed : debug)
+add item move function
+add item removal when outside area
+modify code to generate items regularly
+----------------------------
+add item removal when colliding with player
+add score variable 
+update score when player catches items
+add score text display
+Play sound when catching an item 
+----------------------------
+add Life variable 
+decrease life when player misses items
+add life text display
+Play sound when missing an item 
+----------------------------
+create end of game function (boolean return) that checks there is no more life
+only generates if game is not ended
+allow START button or SPACE bar key to start a game (generation starts) : add a "started" boolean variable
+Display start message or END message
+play sound when game is finished (2 sounds : one when just finished, one when high score is updated)
+----------------------------
+Read a file to get high score : + display high score
+Update (save) high score in file when a game is ended
+
+
+============================================
+FEATURES
+============================================
+speed increase + display meter
+----------------------------
+time freeze + display meter 
+----------------------------
+specific bonus falling (time freeze)
+
+
+============================================
+DISPLAY
+============================================
+add life bar sprites + function to display bar according to life variable
+----------------------------
+Add particle emitter or sprite animation when catching an item
+----------------------------
+Add particle emitter or sprite animation when missing an item
+----------------------------
+Add parallax system
+

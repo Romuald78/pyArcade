@@ -19,24 +19,30 @@ def createFixedSprite(filePath, size=None, isMaxRatio=False):
     return spr
 
 
-def createAnimatedSprite(filePath, spriteBox, size=None, isMaxRatio=False):
+def createAnimatedSprite(filePath, spriteBox, startIndex, endIndex, frameduration=1/60, size=None, isMaxRatio=False):
     # get sprite box (nb sprites X, nb Y, size X size Y)
     nbX, nbY, szW, szH = spriteBox
     # Instanciate sprite object
     spr = arcade.AnimatedTimeSprite()
-    # in mode Horizontal
+    # Read Horizontal first, then vertical
     for y in range(nbY):
         for x in range(nbX):
-            tex = arcade.load_texture(filePath, x * szW, y * szH, szW, szH)
-            spr.textures.append(tex)
+            index = x + y*nbX
+            # add index only if in range
+            if index >= startIndex and index <= endIndex:
+                tex = arcade.load_texture(filePath, x * szW, y * szH, szW, szH)
+                spr.textures.append(tex)
     # set dimensions
     spr.update_animation()
     if size != None:
         if isMaxRatio:
-            ratio = max(size[0] / spr.width, size[1] / spr.height)
+            ratio = max(size[0]/spr.width, size[1]/spr.height)
         else:
             ratio = min(size[0]/spr.width, size[1]/spr.height)
         spr.scale = ratio
+    # set frame duration
+    spr.texture_change_frames = int(frameduration*60 + 0.5)
+
     # return sprite object
     return spr
 

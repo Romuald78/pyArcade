@@ -2,7 +2,7 @@
 ### IMPORTS
 ### ====================================================================================================
 import arcade
-import StudentCode
+from process import Process
 import os
 
 
@@ -19,18 +19,36 @@ TITLE = "Arcade Mini-Game !"
 class MyGame(arcade.Window):
 
 
+    BUTTON_NAMES = ["A",
+                    "B",
+                    "X",
+                    "Y",
+                    "LB",
+                    "RB",
+                    "VIEW",
+                    "MENU",
+                    "LSTICK",
+                    "RSTICK",
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    None,
+                    ]
+
     # ----------------------------------
     # PRIVATE METHODS FOR INPUT MANAGEMENT
     # ----------------------------------
     def __onButtonPressed(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        self.onButtonPressed(idx, button)
+        self.onButtonPressed(idx, MyGame.BUTTON_NAMES[button])
     def __onButtonReleased(self, _gamepad, button):
         idx = self.gamepads[_gamepad]
-        self.onButtonReleased(idx, button)
+        self.onButtonReleased(idx, MyGame.BUTTON_NAMES[button])
     def __onCrossMove(self, _gamepad, x, y):
         idx = self.gamepads[_gamepad]
-        self.onCrossMove(idx, x, y)
+        self.onCrossMove(idx, x, -y)
     def __onAxisMove(self, _gamepad, axis, value):
         idx = self.gamepads[_gamepad]
         self.onAxisMove(idx, axis, value)
@@ -42,7 +60,8 @@ class MyGame(arcade.Window):
     def __init__(self, width, height, title):
         #init application window
         super().__init__(width, height, title)
-
+        # init process object
+        self.process = Process()
         # set application window background color
         arcade.set_background_color(arcade.color.BLACK)
         # Store gamepad list
@@ -68,7 +87,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def setup(self):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.setup()
+        self.process.setup()
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -78,7 +97,7 @@ class MyGame(arcade.Window):
     def on_draw(self):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
         arcade.start_render()
-        StudentCode.draw()
+        self.process.draw()
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -87,7 +106,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def update(self, delta_time):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.update(delta_time)
+        self.process.update(delta_time)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -99,7 +118,7 @@ class MyGame(arcade.Window):
         # Close application if ESCAPE key is hit
         if key == arcade.key.ESCAPE:
             self.close()
-        StudentCode.onKeyEvent(key,True)
+        self.process.onKeyEvent(key,True)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -108,7 +127,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def on_key_release(self, key, modifiers):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.onKeyEvent(key,False)
+        self.process.onKeyEvent(key,False)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -117,7 +136,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onButtonPressed(self, gamepadNum, buttonNum):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.onButtonEvent(gamepadNum,buttonNum,True)
+        self.process.onButtonEvent(gamepadNum,buttonNum,True)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -126,7 +145,7 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onButtonReleased(self, gamepadNum, buttonNum):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.onButtonEvent(gamepadNum,buttonNum,False)
+        self.process.onButtonEvent(gamepadNum,buttonNum,False)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -135,8 +154,8 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onCrossMove(self, gamepadNum, xValue, yValue):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.onAxisEvent(gamepadNum, "x", xValue)
-        StudentCode.onAxisEvent(gamepadNum, "y", yValue)
+        self.process.onAxisEvent(gamepadNum, "x", xValue)
+        self.process.onAxisEvent(gamepadNum, "y", yValue)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -145,7 +164,9 @@ class MyGame(arcade.Window):
     # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     def onAxisMove(self, gamepadNum, axisName, analogValue):
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
-        StudentCode.onAxisEvent(gamepadNum,axisName,analogValue)
+        if axisName == "z":
+            analogValue = -analogValue
+        self.process.onAxisEvent(gamepadNum,axisName.upper(),analogValue)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
 
 
@@ -157,7 +178,7 @@ def main():
     file_path = os.path.dirname(os.path.abspath(__file__))
     os.chdir(file_path)
 
-    game = MyGame(StudentCode.SCREEN_WIDTH, StudentCode.SCREEN_HEIGHT, TITLE)
+    game = MyGame(Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT, TITLE)
     game.setup()
     arcade.run()
 
