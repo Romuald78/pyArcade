@@ -17,18 +17,19 @@ class Process:
 
     # create new candy
     def createCandy(self):
+        nbImg = 9
         x = randint(0,Process.SCREEN_WIDTH)
         y = Process.SCREEN_HEIGHT+50
         params = {"filePath"  : "images/items/pumpkins.png",
                   "spriteBox" :(3,3,250,250),
                   "startIndex":0,
-                  "endIndex"  :8,
+                  "endIndex"  :nbImg-1,
                   "size"      :(self.CANDY_W, self.CANDY_W)
                   }
         candy = createAnimatedSprite(params)
         candy.center_x = x
         candy.center_y = y
-        img = randint(0,5)
+        img = randint(0,nbImg-1)
         candy.set_texture(img)
         spd = random()*(self.MAX_CANDY_SPEED-self.MIN_CANDY_SPEED) + self.MIN_CANDY_SPEED
         self.candies.append((candy,spd,x))
@@ -125,7 +126,7 @@ class Process:
         pass
         self.SPEED  = 8
         self.CHAR_W = 250
-        self.CANDY_W = self.CHAR_W/2
+        self.CANDY_W = 90
         self.MAX_CANDY_SPEED = 5
         self.MIN_CANDY_SPEED = 2.5
         self.COLLIDE_DIST = (self.CHAR_W + self.CANDY_W)*0.33
@@ -205,8 +206,8 @@ class Process:
     def draw(self):
         self.drawParallax([self.NB_PARALLAX -1])
         self.drawGirl()
-        self.drawParallax(list(range(self.NB_PARALLAX -1)))
         self.drawCandies()
+        self.drawParallax(list(range(self.NB_PARALLAX -1)))
 
 
     ### ====================================================================================================
