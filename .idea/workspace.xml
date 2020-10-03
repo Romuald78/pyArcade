@@ -2,85 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/images/characters/troll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/witch.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/items/bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/items/barElt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/characters/penguin_slide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/characters/penguin_walk.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/characters/penguin.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/license.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade-2.3.15.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/arcade_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/arcade_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/buffered_draw_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/buffered_draw_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/draw_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/draw_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/drawing_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/drawing_support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/earclip_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/earclip_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_dialogue_box.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_text_box.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/gui_text_button.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/isometric_example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shape_list_demo_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shape_list_demo_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes_buffered.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/shapes_buffered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/slime_invaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/slime_invaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sound_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sound_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_bullets_aimed.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_bullets_aimed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins_background.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_collect_coins_background.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_explosion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_face_left_or_right.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_face_left_or_right.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_animation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_scrolling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_move_scrolling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_rooms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_tiled_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_tiled_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_tiled_map_with_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/sprite_tiled_map_with_levels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/starting_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/starting_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/starting_template_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/starting_template_simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/view_screens_minimal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/examples/view_screens_minimal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/gui.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/physics_engines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/physics_engines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/py.typed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/read_tiled_map.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Buttons/Clicked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Buttons/Hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Buttons/Locked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Buttons/Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/DialogueBox/DialogueBox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Menu/Menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/TextBox/Brown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/TextBox/LightBrown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/gui_themes/Fantasy/Window/Window.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/tmx_maps/level_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/tmx_maps/level_1.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/tmx_maps/level_2.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/resources/tmx_maps/level_2.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/shader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/soloud/soloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/soloud/soloud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sound.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/sprite_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/texture.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/texture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/tilemap.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/tilemap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/window_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/arcade/window_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser-0.9.3.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/xml_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytiled_parser/xml_parser.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +23,8 @@
       <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="175" column="59" selection-start-line="175" selection-start-column="59" selection-end-line="175" selection-end-column="59" />
+            <state relative-caret-position="203">
+              <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
               <folding>
                 <element signature="e#222#235#0" expanded="true" />
               </folding>
@@ -107,7 +35,7 @@
       <file leaf-file-name="todo.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="1495">
               <caret line="65" column="117" selection-start-line="65" selection-start-column="117" selection-end-line="65" selection-end-column="117" />
             </state>
           </provider>
@@ -116,8 +44,8 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="686">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -133,7 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>move</find>
       <find>forw</find>
       <find>speem²</find>
       <find>BODY_S</find>
@@ -142,7 +69,6 @@
       <find>print</find>
       <find>speed</find>
       <find>satura</find>
-      <find>SPEED</find>
       <find>,50</find>
       <find>1/</find>
       <find>250,</find>
@@ -163,6 +89,8 @@
       <find>night</find>
       <find>parall</find>
       <find>draw</find>
+      <find>SPEED</find>
+      <find>col</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,8 +113,8 @@
         <option value="$PROJECT_DIR$/StudentCode.py" />
         <option value="$PROJECT_DIR$/snake.py" />
         <option value="$PROJECT_DIR$/Launcher.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/process.py" />
       </list>
     </option>
@@ -203,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,7 +171,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -331,7 +259,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28213507" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28213507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -599,24 +527,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
+    <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="1495">
+          <caret line="65" column="117" selection-start-line="65" selection-start-column="117" selection-end-line="65" selection-end-column="117" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
+    <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="65" column="117" selection-start-line="65" selection-start-column="117" selection-end-line="65" selection-end-column="117" />
+        <state relative-caret-position="686">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="175" column="59" selection-start-line="175" selection-start-column="59" selection-end-line="175" selection-end-column="59" />
+        <state relative-caret-position="203">
+          <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
           <folding>
             <element signature="e#222#235#0" expanded="true" />
           </folding>

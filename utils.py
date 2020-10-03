@@ -52,6 +52,7 @@ def createAnimatedSprite(params):
         else:
             ratio = min(size[0]/spr.width, size[1]/spr.height)
         spr.scale = ratio
+
     # set frame duration
     spr.texture_change_frames = int(frameduration*60 + 0.5)
 

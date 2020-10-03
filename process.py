@@ -19,10 +19,10 @@ class Process:
     def createCandy(self):
         x = randint(0,Process.SCREEN_WIDTH)
         y = Process.SCREEN_HEIGHT+50
-        params = {"filePath"  : "images/items/candies.png",
-                  "spriteBox" :(3,2,128,128),
+        params = {"filePath"  : "images/items/pumpkins.png",
+                  "spriteBox" :(3,3,250,250),
                   "startIndex":0,
-                  "endIndex"  :5,
+                  "endIndex"  :8,
                   "size"      :(self.CANDY_W, self.CANDY_W)
                   }
         candy = createAnimatedSprite(params)
@@ -124,11 +124,11 @@ class Process:
     def __init__(self):
         pass
         self.SPEED  = 8
-        self.CHAR_W = 100*1.75
+        self.CHAR_W = 250
         self.CANDY_W = self.CHAR_W/2
         self.MAX_CANDY_SPEED = 5
         self.MIN_CANDY_SPEED = 2.5
-        self.COLLIDE_DIST = (self.CHAR_W + self.CANDY_W)/2
+        self.COLLIDE_DIST = (self.CHAR_W + self.CANDY_W)*0.33
         self.NB_PARALLAX = 6
 
     ### ====================================================================================================
@@ -136,16 +136,16 @@ class Process:
     ### ====================================================================================================
     def setup(self):
         # character animation : prepare configuration
-        paramRun = {"filePath"     : "images/characters/girl.png",
-                    "spriteBox"    : (7, 1, 170, 250),
+        paramRun = {"filePath"     : "images/characters/witch.png",
+                    "spriteBox"    : (9, 1, 350, 250),
                     "startIndex"   : 1,
-                    "endIndex"     : 6,
+                    "endIndex"     : 8,
                     "frameDuration": 1/20,
                     "size"         : (self.CHAR_W,self.CHAR_W),
                     "isMaxRatio"   : True
                    }
-        paramIdle = {"filePath"     : "images/characters/girl.png",
-                     "spriteBox"    : (7, 1, 170, 250),
+        paramIdle = {"filePath"     : "images/characters/witch.png",
+                     "spriteBox"    : (9, 1, 350, 250),
                      "startIndex"   : 0,
                      "endIndex"     : 0,
                      "frameDuration": 1/20,
@@ -173,7 +173,7 @@ class Process:
         # create parallax
         sprList = []
         for i in range(self.NB_PARALLAX ,0,-1):
-            paramBG = {"filePath": f"images/parallax/cake/parallax{i}.png",
+            paramBG = {"filePath": f"images/parallax/night/night{i}.png",
                        "size"    : (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT)
                       }
             sprList.append([createFixedSprite(paramBG),
