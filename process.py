@@ -19,7 +19,13 @@ class Process:
     def createCandy(self):
         x = randint(0,Process.SCREEN_WIDTH)
         y = Process.SCREEN_HEIGHT+50
-        candy = createAnimatedSprite("images/items/candies.png",(3,2,128,128), 0, 5, size=(self.CANDY_W,self.CANDY_W))
+        params = {"filePath"  : "images/items/candies.png",
+                  "spriteBox" :(3,2,128,128),
+                  "startIndex":0,
+                  "endIndex"  :5,
+                  "size"      :(self.CANDY_W, self.CANDY_W)
+                  }
+        candy = createAnimatedSprite(params)
         candy.center_x = x
         candy.center_y = y
         img = randint(0,5)
@@ -123,18 +129,32 @@ class Process:
         self.MAX_CANDY_SPEED = 5
         self.MIN_CANDY_SPEED = 2.5
         self.COLLIDE_DIST = (self.CHAR_W + self.CANDY_W)/2
-
+        self.NB_PARALLAX = 6
 
     ### ====================================================================================================
     ### INIT
     ### ====================================================================================================
     def setup(self):
-        # character animation
-        sz = (self.CHAR_W,self.CHAR_W)
-
-        runAnim  = createAnimatedSprite("images/characters/girl.png", (7,1,170,250), 1, 6, frameduration=1/20, size=sz, isMaxRatio=True)
-        idleAnim = createAnimatedSprite("images/characters/girl.png", (7,1,170,250), 0, 0, frameduration=1/20, size=sz, isMaxRatio=True)
-
+        # character animation : prepare configuration
+        paramRun = {"filePath"     : "images/characters/girl.png",
+                    "spriteBox"    : (7, 1, 170, 250),
+                    "startIndex"   : 1,
+                    "endIndex"     : 6,
+                    "frameDuration": 1/20,
+                    "size"         : (self.CHAR_W,self.CHAR_W),
+                    "isMaxRatio"   : True
+                   }
+        paramIdle = {"filePath"     : "images/characters/girl.png",
+                     "spriteBox"    : (7, 1, 170, 250),
+                     "startIndex"   : 0,
+                     "endIndex"     : 0,
+                     "frameDuration": 1/20,
+                     "size"         : (self.CHAR_W,self.CHAR_W),
+                     "isMaxRatio"   : True
+                    }
+        # character animation : create sprite objects
+        runAnim  = createAnimatedSprite(paramRun )
+        idleAnim = createAnimatedSprite(paramIdle)
 
         allAnims = {"idle" : idleAnim, "run":runAnim}
         # init state
@@ -152,9 +172,12 @@ class Process:
 
         # create parallax
         sprList = []
-        for i in range(6,0,-1):
-            sprList.append([createFixedSprite(f"images/parallax/cake/parallax{i}.png", (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT)),
-                            createFixedSprite(f"images/parallax/cake/parallax{i}.png", (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT))])
+        for i in range(self.NB_PARALLAX ,0,-1):
+            paramBG = {"filePath": f"images/parallax/cake/parallax{i}.png",
+                       "size"    : (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT)
+                      }
+            sprList.append([createFixedSprite(paramBG),
+                            createFixedSprite(paramBG)])
             sprList[-1][0].center_y = Process.SCREEN_HEIGHT/2
             sprList[-1][1].center_y = Process.SCREEN_HEIGHT/2
         self.parallax = {"offset":0,
@@ -180,9 +203,9 @@ class Process:
     ### RENDERING
     ### ====================================================================================================
     def draw(self):
-        self.drawParallax([5])
+        self.drawParallax([self.NB_PARALLAX -1])
         self.drawGirl()
-        self.drawParallax(list(range(5)))
+        self.drawParallax(list(range(self.NB_PARALLAX -1)))
         self.drawCandies()
 
 

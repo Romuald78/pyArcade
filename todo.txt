@@ -1,54 +1,57 @@
 ============================================
 MAIN
 ============================================
-keeping a list up to date with all used variables
-this list contains types, names, and description of each variable
+- Installation of tools (PyCharm + Initial code + running first)
+- Presentation of the environment (process.py : __init__, setup, update, draw) + game loop
+- Presentation of the Class fields (access to these variables in all the process.py file) + self keywoard
+- Presentation of the Sprites objects, creation + members (center_x,center_y,scale_x,_scale_y, draw(), update_animation())
+- Information on creating new methods for each functionality (creation, draw, update, ...)
+- Information on keeping a list of all the variables (types, names, descriptions, ...)
+- Follow steps to create the game
 
 
 ============================================
 STEPS
 ============================================
-single sprite + draw
-add background sprite
-add position variable
-key event to update position + draw sprite onto position
-controller event to update position
-anim sprite enable animation when moving and idle when stopped
+- single sprite + draw (creation + modify center_xy + angle + update_animation + draw)
+- add position variable
+- key event to update position + update sprite onto position + draw sprite
+- controller event to update position
+- anim sprite enable animation when moving and idle when stopped
+- add background sprite
 ----------------------------
-add item creation function (speed and initPosition) (+activation when space bar is pressed : debug)
-add item move function
-add item removal when outside area
-modify code to generate items regularly
+- add item creation function (speed and initPosition) (+activation when space bar is pressed : debug) -> use a list
+- add item update(move) function (browse the whole list)
+- add item removal from list when outside area
+- modify code to generate items regularly (add timer and a function to reset/update it)
 ----------------------------
-add item removal when colliding with player
-add score variable 
-update score when player catches items
-add score text display
-Play sound when catching an item 
+- add item removal when colliding with player (create box collision function)
+- add score variable
+- update score when player catches items (when collision is ok)
+- add score text display
+- play sound when catching an item
 ----------------------------
-add Life variable 
-decrease life when player misses items
-add life text display
-Play sound when missing an item 
+- add Life variable + function to reset it
+- add function to decrease life when player misses items (when item is outside the area)
+- add life text display
+- play sound when missing an item
 ----------------------------
-create end of game function (boolean return) that checks there is no more life
-only generates if game is not ended
-allow START button or SPACE bar key to start a game (generation starts) : add a "started" boolean variable
-Display start message or END message
-play sound when game is finished (2 sounds : one when just finished, one when high score is updated)
+- create end of game function (variable for ready/running/ended) that checks there is no more life
+- only generates items if game is running and not ended
+- allow START button or SPACE bar key to start a game (generation starts)
+- display start message and END message
+- play sound when game is finished (may be two sounds, 1 when finished, 1 when high socre is exceeded)
 ----------------------------
-Read a file to get high score : + display high score
-Update (save) high score in file when a game is ended
+- read a file to get high score : + display high scores at game start/end
+- update (save) high scores in file when a game is ended
 
 
 ============================================
 FEATURES
 ============================================
-speed increase + display meter
+time freeze (time-limited) + display icon/gauge/cooldown
 ----------------------------
-time freeze + display meter 
-----------------------------
-specific bonus falling (time freeze)
+higher speed (time-limited) + display icon/gauge/cooldown
 
 
 ============================================
@@ -60,5 +63,5 @@ Add particle emitter or sprite animation when catching an item
 ----------------------------
 Add particle emitter or sprite animation when missing an item
 ----------------------------
-Add parallax system
+Add parallax system (compute offset for each layer + display in order + exclude some displays depending on game play)
 

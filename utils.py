@@ -4,7 +4,11 @@ from random import *
 from arcade import AnimationKeyframe
 
 
-def createFixedSprite(filePath, size=None, isMaxRatio=False):
+def createFixedSprite(params):
+    # retrieve parameters
+    filePath      = params["filePath"  ]
+    size          = None if "size" not in params else params["size"]
+    isMaxRatio    = False if "isMaxRatio" not in params else params["isMaxRatio"]
     # load texture for sprite
     spr = arcade.AnimatedTimeSprite()
     spr.append_texture(arcade.load_texture(filePath))
@@ -19,7 +23,15 @@ def createFixedSprite(filePath, size=None, isMaxRatio=False):
     return spr
 
 
-def createAnimatedSprite(filePath, spriteBox, startIndex, endIndex, frameduration=1/60, size=None, isMaxRatio=False):
+def createAnimatedSprite(params):
+    # retrieve parameters
+    filePath      = params["filePath"  ]
+    spriteBox     = params["spriteBox" ]
+    startIndex    = params["startIndex"]
+    endIndex      = params["endIndex"  ]
+    frameduration = 1/60 if "frameDuration" not in params else params["frameDuration"]
+    size          = None if "size" not in params else params["size"]
+    isMaxRatio    = False if "isMaxRatio" not in params else params["isMaxRatio"]
     # get sprite box (nb sprites X, nb Y, size X size Y)
     nbX, nbY, szW, szH = spriteBox
     # Instanciate sprite object
@@ -47,7 +59,20 @@ def createAnimatedSprite(filePath, spriteBox, startIndex, endIndex, frameduratio
     return spr
 
 
-def createParticleBurst(x0,y0,partInterval,totalDuration,partSize,partScale,partSpeed,color,startAlpha,endAlpha,imagePath=None):
+def createParticleBurst(params):
+    # retrieve parameters
+    x0            = params["x0"           ]
+    y0            = params["y0"           ]
+    partInterval  = params["partInterval" ]
+    totalDuration = params["totalDuration"]
+    partSize      = params["partSize"     ]
+    partScale     = params["partScale"    ]
+    partSpeed     = params["partSpeed"    ]
+    color         = params["color"        ]
+    startAlpha    = params["startAlpha"   ]
+    endAlpha      = params["endAlpha"     ]
+    imagePath     = None if "imagePath" not in params else params["imagePath"]
+    # create particle emitter
     e = arcade.Emitter(
         center_xy=(x0, y0),
         emit_controller=arcade.EmitterIntervalWithTime(partInterval, totalDuration),
@@ -60,6 +85,7 @@ def createParticleBurst(x0,y0,partInterval,totalDuration,partSize,partScale,part
             end_alpha=endAlpha,
         ),
     )
+    # return result
     return e
 
 
