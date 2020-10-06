@@ -25,7 +25,7 @@ class Process:
                   "startIndex":0,
                   "endIndex"  :nbImg-1,
                   "size"      :(self.CANDY_W, self.CANDY_W)
-                  }
+                 }
         candy = createAnimatedSprite(params)
         candy.center_x = x
         candy.center_y = y
@@ -54,9 +54,49 @@ class Process:
             # if candy too low : destroy
             if cnd.center_y < self.girl["position"][1]-spr.height/2:
                 self.candies.remove(c)
+                self.createSkullBurst(cnd.center_x, cnd.center_y, c[2])
+
             # if candy colligind with girl
             if (cnd.center_x - spr.center_x)**2 + (cnd.center_y - spr.center_y)**2 < self.COLLIDE_DIST**2:
                 self.candies.remove(c)
+                self.createGhostBurst(cnd.center_x, cnd.center_y, c[2])
+
+    # create Ghost Burst
+    def createGhostBurst(self,currentX,currentY, realX):
+        # create burst
+        paramB = {"x0": currentX,
+                  "y0": currentY,
+                  "partInterval": 0.020,
+                  "totalDuration": 0.3,
+                  "partSize": 50,
+                  "partScale": 0.15,
+                  "partSpeed": 10.0,
+                  "color": (0, 0, 0),
+                  "startAlpha": 100,
+                  "endAlpha": 25,
+                  "imagePath": "images/items/ghost2.png"
+                  }
+        newBurst = createParticleBurst(paramB)
+        self.bursts.append((newBurst, realX))
+
+    # create Ghost Burst
+    def createSkullBurst(self,currentX,currentY, realX):
+        # create burst
+        paramB = {"x0": currentX,
+                  "y0": currentY,
+                  "partInterval": 0.03,
+                  "totalDuration": 0.25,
+                  "partSize": 50,
+                  "partScale": 0.15,
+                  "partSpeed": 10.0,
+                  "color": (0, 0, 0),
+                  "startAlpha": 100,
+                  "endAlpha": 25,
+                  "imagePath": "images/items/skull.png"
+                  }
+        newBurst = createParticleBurst(paramB)
+        self.bursts.append((newBurst, realX))
+
 
     # Draw parallax
     def drawParallax(self, excludes):
@@ -187,6 +227,56 @@ class Process:
         # candy list
         self.candies = []
 
+        # Particle effect following character
+        paramPE = { "x0"          : 2000,
+                    "y0"          : 2000,
+                    "partNB"      : 200,
+                    "partSize"    : 128,
+                    "partScale"   : 0.3,
+                    "partSpeed"   : 7.0,
+                    "maxLifeTime" : 0.7,
+                    "color"       : (255,128,0),
+                    "startAlpha"  : 100,
+                    "endAlpha"    : 0,
+                    "textureFile" : "images/items/star.png"
+        }
+        self.charEmitter = createParticleEmitter(paramPE)
+
+        # Particle bursts
+        self.bursts = []
+
+
+    # update all emitters
+    def updateEmitters(self):
+        # update all bursts
+        for b in self.bursts:
+            # update burst emitter
+            emit = b[0]
+            x    = self.parallax["offset"] + b[1]
+            emit.center_x = x
+            emit.update()
+            # remove if needed
+            if emit.can_reap():
+                self.bursts.remove(b)
+
+        # update character emitter
+        if self.girl["state"] == "run":
+            delta = int(self.CHAR_W/6)
+            self.charEmitter.center_x = self.girl["position"][0]
+            self.charEmitter.center_y = self.girl["position"][1] + randint(-delta,delta)
+        else:
+            self.charEmitter.center_x = 10000
+            self.charEmitter.center_y = 10000
+        self.charEmitter.update()
+
+    # draw all emitters (bursts + char)
+    def drawBursts(self):
+        # draw bursts
+        for b in self.bursts:
+            b[0].draw()
+    def drawCharEmitter(self):
+        self.charEmitter.draw()
+
 
 
     ### ====================================================================================================
@@ -199,15 +289,26 @@ class Process:
         self.updateGirlAnim(deltaTime)
         self.updateCandies(deltaTime)
 
+        # update all emitters
+        self.updateEmitters()
+
 
     ### ====================================================================================================
     ### RENDERING
     ### ====================================================================================================
     def draw(self):
         self.drawParallax([self.NB_PARALLAX -1])
+
+        self.drawCharEmitter()
         self.drawGirl()
+
         self.drawCandies()
+
+        self.drawBursts()
+
         self.drawParallax(list(range(self.NB_PARALLAX -1)))
+
+
 
 
     ### ====================================================================================================

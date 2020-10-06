@@ -91,14 +91,30 @@ def createParticleBurst(params):
 
 
 
-def createParticleEmitter(x0,y0,partNB,partSize,partScale,partSpeed,color,startAlpha,endAlpha):
+def createParticleEmitter(params):
+    # retrieve parameters
+    x0            = params["x0"         ]
+    y0            = params["y0"         ]
+    partNB        = params["partNB"     ]
+    partSize      = params["partSize"   ]
+    partScale     = params["partScale"  ]
+    partSpeed     = params["partSpeed"  ]
+    maxLifeTime   = params["maxLifeTime"]
+    color         = params["color"      ]
+    startAlpha    = params["startAlpha" ]
+    endAlpha      = params["endAlpha"   ]
+    textureFile   = None if "textureFile" not in params else params["textureFile"]
+    # Prepare Texture
+    if textureFile == None:
+        textureFile = arcade.make_circle_texture(partSize, color)
+    # Create emitter
     e = arcade.Emitter(
         center_xy        = (x0, y0),
         emit_controller  = arcade.EmitMaintainCount(partNB),
         particle_factory = lambda emitter: arcade.FadeParticle(
-            filename_or_texture = arcade.make_circle_texture(partSize, color),
+            filename_or_texture = textureFile,
             change_xy           = arcade.rand_in_circle( (0.0,0.0), partSpeed),
-            lifetime            = uniform(0.01,0.4),
+            lifetime            = uniform(maxLifeTime/40,maxLifeTime),
             scale = partScale,
             start_alpha=startAlpha,
             end_alpha=endAlpha,
