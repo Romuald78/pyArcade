@@ -15,6 +15,16 @@ class Process:
     SCREEN_WIDTH  = int(960*1.75)
     SCREEN_HEIGHT = int(540*1.75)
 
+
+
+
+
+
+
+
+
+
+
     # create new candy
     def createCandy(self):
         nbImg = 8
@@ -55,11 +65,15 @@ class Process:
             if cnd.center_y < self.girl["position"][1]-spr.height/2:
                 self.candies.remove(c)
                 self.createSkullBurst(cnd.center_x, cnd.center_y, c[2])
+                self.HP -= 1
+                self.loseSound.play()
 
             # if candy colligind with girl
             if (cnd.center_x - spr.center_x)**2 + (cnd.center_y - spr.center_y)**2 < self.COLLIDE_DIST**2:
                 self.candies.remove(c)
                 self.createGhostBurst(cnd.center_x, cnd.center_y, c[2])
+                self.score += 1
+                self.winSound.play()
 
     # create Ghost Burst
     def createGhostBurst(self,currentX,currentY, realX):
@@ -158,6 +172,41 @@ class Process:
         sprite.center_y = y
         sprite.draw()
 
+    # update all emitters
+    def updateEmitters(self):
+        # update all bursts
+        for b in self.bursts:
+            # update burst emitter
+            emit = b[0]
+            x    = self.parallax["offset"] + b[1]
+            emit.center_x = x
+            emit.update()
+            # remove if needed
+            if emit.can_reap():
+                self.bursts.remove(b)
+
+        # update character emitter
+        if self.girl["state"] == "run":
+            delta = int(self.CHAR_W/6)
+            self.charEmitter.center_x = self.girl["position"][0]
+            self.charEmitter.center_y = self.girl["position"][1] + randint(-delta,delta)
+        else:
+            self.charEmitter.center_x = 10000
+            self.charEmitter.center_y = 10000
+        self.charEmitter.update()
+
+    # draw all emitters (bursts + char)
+    def drawBursts(self):
+        # draw bursts
+        for b in self.bursts:
+            b[0].draw()
+
+    def drawCharEmitter(self):
+        self.charEmitter.draw()
+
+
+
+
 
     ### ====================================================================================================
     ### CONSTRUCTOR
@@ -171,11 +220,17 @@ class Process:
         self.MIN_CANDY_SPEED = 2.5
         self.COLLIDE_DIST = (self.CHAR_W + self.CANDY_W)*0.33
         self.NB_PARALLAX = 6
+        self.MAX_LIFE    = 20
+        self.LIFEBAR_W   = 672
+        self.LIFEBAR_H   = 64
+        self.LIFEELT_W   = 30
+        self.LIFEELT_H   = 40
 
     ### ====================================================================================================
     ### INIT
     ### ====================================================================================================
     def setup(self):
+        pass
         # character animation : prepare configuration
         paramRun = {"filePath"     : "images/characters/ninja.png",
                     "spriteBox"    : (7, 1, 120, 120),
@@ -214,8 +269,8 @@ class Process:
         # create parallax
         sprList = []
         for i in range(self.NB_PARALLAX ,0,-1):
-            paramBG = {"filePath": f"images/parallax/night/night{i}.png",
-                       "size"    : (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT)
+            paramBG = {"filePath"   : f"images/parallax/night/night{i}.png",
+                       "size"       : (Process.SCREEN_WIDTH, Process.SCREEN_HEIGHT)
                       }
             sprList.append([createFixedSprite(paramBG),
                             createFixedSprite(paramBG)])
@@ -245,38 +300,32 @@ class Process:
         # Particle bursts
         self.bursts = []
 
+        # Life
+        self.HP = self.MAX_LIFE
+        # Life HUD
+        paramBorder = {"filePath"   : "images/interface/bar.png",
+                       "size"       : (self.LIFEBAR_W, self.LIFEBAR_H),
+                       "position"   : (self.LIFEBAR_W//2 +5, self.SCREEN_HEIGHT-self.LIFEBAR_H//2 -5),
+                       "filterColor": (255,255,255,160)
+                      }
+        self.hpBorder = createFixedSprite(paramBorder)
+        #life elements
+        self.lifeElts = []
+        for i in range(self.MAX_LIFE):
+            paramElt = {"filePath": "images/interface/barElt.png",
+                        "size": (self.LIFEELT_W,self.LIFEELT_H),
+                        "position": (i*(self.LIFEELT_W+2) + self.LIFEELT_W + 8, self.SCREEN_HEIGHT - self.LIFEBAR_H//2 -5)
+                       }
+            self.lifeElts.append( createFixedSprite(paramElt) )
 
-    # update all emitters
-    def updateEmitters(self):
-        # update all bursts
-        for b in self.bursts:
-            # update burst emitter
-            emit = b[0]
-            x    = self.parallax["offset"] + b[1]
-            emit.center_x = x
-            emit.update()
-            # remove if needed
-            if emit.can_reap():
-                self.bursts.remove(b)
+        # SCORE
+        self.score = 0
 
-        # update character emitter
-        if self.girl["state"] == "run":
-            delta = int(self.CHAR_W/6)
-            self.charEmitter.center_x = self.girl["position"][0]
-            self.charEmitter.center_y = self.girl["position"][1] + randint(-delta,delta)
-        else:
-            self.charEmitter.center_x = 10000
-            self.charEmitter.center_y = 10000
-        self.charEmitter.update()
+        # win sound
+        self.winSound = createSound("sounds/bling.wav")
+        # lose sound
+        self.loseSound = createSound("sounds/crash.wav")
 
-    # draw all emitters (bursts + char)
-    def drawBursts(self):
-        # draw bursts
-        for b in self.bursts:
-            b[0].draw()
-
-    def drawCharEmitter(self):
-        self.charEmitter.draw()
 
 
 
@@ -289,9 +338,9 @@ class Process:
         self.updateParallaxOffset()
         self.updateGirlAnim(deltaTime)
         self.updateCandies(deltaTime)
-
         # update all emitters
         self.updateEmitters()
+
 
 
     ### ====================================================================================================
@@ -299,31 +348,46 @@ class Process:
     ### ====================================================================================================
     def draw(self):
         self.drawParallax([self.NB_PARALLAX -1])
-
         self.drawCharEmitter()
         self.drawGirl()
-
         self.drawCandies()
-
         self.drawBursts()
-
         self.drawParallax(list(range(self.NB_PARALLAX -1)))
-
-
+        # interface
+        self.hpBorder.draw()
+        for i in range(self.HP):
+            mid   = self.MAX_LIFE//2
+            elt   = self.lifeElts[i]
+            red   = 255 if i<self.MAX_LIFE//2 else int(2*255*(self.MAX_LIFE-i)/self.MAX_LIFE)
+            green = int(2*255*i/self.MAX_LIFE) if i<self.MAX_LIFE//2 else 255
+            blue  = 0
+            alpha = 192
+            elt.color = (red, green, blue, alpha)
+            elt.draw()
+        # score
+        paramTxt = {"x"       : self.SCREEN_WIDTH  - 5,
+                    "y"       : self.SCREEN_HEIGHT - 40,
+                    "alignH"  : "right",
+                    "alignV"  : "top",
+                    "message" : str(self.score),
+                    "size"    : 50,
+                    "color"   : (255,160,80,192),
+                   }
+        drawText(paramTxt)
 
 
     ### ====================================================================================================
     ### KEYBOARD EVENTS
-    ### key is from : arcade.key.xxx
+    ### key is taken from : arcade.key.xxx
     ### ====================================================================================================
     def onKeyEvent(self,key,isPressed):
         if key == arcade.key.LEFT:
             self.girl["move"]["left"]  = isPressed
         if key == arcade.key.RIGHT:
             self.girl["move"]["right"] = isPressed
-
         if key==arcade.key.SPACE and isPressed:
             self.createCandy()
+
 
 
     ### ====================================================================================================
@@ -333,6 +397,7 @@ class Process:
     def onButtonEvent(self, gamepadNum,buttonName,isPressed):
         # print(f"GamePad={gamepadNum} - ButtonNum={buttonName} - isPressed={isPressed}")
         pass
+
 
 
     ### ====================================================================================================

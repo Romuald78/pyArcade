@@ -4,13 +4,36 @@ from random import *
 from arcade import AnimationKeyframe
 
 
+def createSound(fileName):
+    snd = arcade.load_sound(fileName)
+    return snd
+
+def drawText(params):
+    # retrieve parameters
+    x       = params["x"]
+    y       = params["y"]
+    message = params["message"]
+    size    = 12                if "size"   not in params else params["size"  ]
+    color   = (255,255,255,255) if "color"  not in params else params["color" ]
+    alignH  = "center"          if "alignH" not in params else params["alignH"]        # left, center, right
+    alignV  = "center"          if "alignV" not in params else params["alignV"]        # top, center, bottom
+    angle   = 0                 if "angle"  not in params else params["angle" ]
+    bold    = False             if "bold"   not in params else params["bold"  ]
+    italic  = False             if "italic" not in params else params["italic"]
+    # draw text according to configuration
+    arcade.draw_text(text=message,start_x=x,start_y=y,color=color,font_size=size,anchor_x=alignH,anchor_y=alignV,rotation=angle,bold=bold,italic=italic)
+
 def createFixedSprite(params):
     # retrieve parameters
-    filePath      = params["filePath"  ]
-    size          = None if "size" not in params else params["size"]
-    isMaxRatio    = False if "isMaxRatio" not in params else params["isMaxRatio"]
+    filePath    = params["filePath"  ]
+    size        = None if "size" not in params else params["size"]
+    filterColor = (255,255,255,255) if "filterColor" not in params else params["filterColor"]
+    isMaxRatio  = False if "isMaxRatio" not in params else params["isMaxRatio"]
+    position    = (0,0) if "position" not in params else params["position"]
+
     # load texture for sprite
     spr = arcade.AnimatedTimeSprite()
+    spr.color = filterColor
     spr.append_texture(arcade.load_texture(filePath))
     # set dimensions
     spr.update_animation()
@@ -20,6 +43,9 @@ def createFixedSprite(params):
         else:
             ratio = min(size[0]/spr.width, size[1]/spr.height)
         spr.scale = ratio
+    # set position (init)
+    spr.center_x = position[0]
+    spr.center_y = position[1]
     return spr
 
 
@@ -32,6 +58,7 @@ def createAnimatedSprite(params):
     frameduration = 1/60 if "frameDuration" not in params else params["frameDuration"]
     size          = None if "size" not in params else params["size"]
     isMaxRatio    = False if "isMaxRatio" not in params else params["isMaxRatio"]
+
     # get sprite box (nb sprites X, nb Y, size X size Y)
     nbX, nbY, szW, szH = spriteBox
     # Instanciate sprite object
@@ -73,6 +100,7 @@ def createParticleBurst(params):
     startAlpha    = params["startAlpha"   ]
     endAlpha      = params["endAlpha"     ]
     imagePath     = None if "imagePath" not in params else params["imagePath"]
+
     # create particle emitter
     e = arcade.Emitter(
         center_xy=(x0, y0),
@@ -104,6 +132,7 @@ def createParticleEmitter(params):
     startAlpha    = params["startAlpha" ]
     endAlpha      = params["endAlpha"   ]
     textureFile   = None if "textureFile" not in params else params["textureFile"]
+
     # Prepare Texture
     if textureFile == None:
         textureFile = arcade.make_circle_texture(partSize, color)
