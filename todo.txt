@@ -1,3 +1,6 @@
+/!\ update utils to make the particle effect use filterColored texture
+/!\ create documentation for utils.py
+
 ============================================
 MAIN
 ============================================
@@ -11,114 +14,170 @@ MAIN
 - Follow steps to create the game
 
 
+
 ============================================
 SINGLE SPRITE MOVE
 ============================================
-- single sprite + draw (creation + modify center_xy + angle + update_animation + draw)
-- add position variable
-- key event to update position + update sprite onto position + draw sprite
-- controller event to update position
+ 1 - single sprite + draw (creation + draw)
+    > constants size of char(W,H)
+    > createCharacter()
+    > drawCharacter()
+
+ 2 - add position variable + update center_x/center_y
+   - key event to update position + update sprite onto position + draw sprite
+    > add position
+    > add key pressed (move is not smooth)
+    > add moves booleans + SPEED + deltaTime parameter
+    > add update position and update keypress code
+
+ 3 - add limitation on screen borders
+    > update updateCharacter function
+
+ 4 - controller event to update position
+    > just update gamepad event function using axis "X" and analog value > 0.5
 
 ============================================
 BACKGROUND DISPLAY
 ============================================
-- add background sprite (HD ratio)
+ 5 - add background sprite (HD ratio)
+    > Create sprite abec display it (create/draw)
 
 ============================================
-ANIMATED SPRITE
+ANIMATED CHARACTER
 ============================================
-- run animation when moving
-- idle animation when stopped
-- list of 2 sprite objects
+ 6 - load animation 'run'
+    > just change parameter object and call to animated function
+    > add update_animation sprite in updatecharacter method
+
+ 7 - load animation idle and store both in memory : update one of them according to movement
+    > modify updateCharacter function to do that
+    > Load also flipped_horizontal animations in memory
+
+ 8 - add variable to store last move direction
+    > modify last direction when moving in one direction
+    > use last direction to select correct animation
 
 ============================================
 ITEMS
 ============================================
-- add item creation function (speed and initPosition) (+activation when space bar is pressed : debug) -> use a list
-- add item update(move) function (browse the whole list)
-- add item removal from list when outside area
+ 9 - Item creations and display
+    > add init function to create list
+    > add generation function to create random position on top of the window and random speed
+    > create anim sprite
+    > use set_texture for the animated sprite to choose image
+    > draw function to draw all the sprites from list
+
+10 - Item moving and destruction
+    > update function to make the item goes down (@speed)
+    > remove item when leaving area (bottom)
 
 ============================================
 BOX COLLISION
 ============================================
-- creat box/box collision function
-- create variables for item and char sizes
-- add item removal when colliding with player
+11 - box collisions between items and character
+    > creat box/box collision function
+    > create variables for item and char sizes (or ratio from sprite sizes)
+    > add function that checks collisions and remove items when colliding with player
 
 ============================================
-SCORE
+SCORE and LIFE
 ============================================
-- add score variable
-- update score when player catches items (when collision is ok)
-- add score text display
+12 - Score management
+    > add score variable
+    > update score when player catches items (when collision is ok)
+    > add score text display
 
-============================================
-LIFE POINTS
-============================================
-- add Life variable
-- update life when item leaves area
-- add life text display
+13 - Life Management
+    > add Life variable + init life constant
+    > update life when item leaves area
+    > add life text display
 
 ============================================
 ITEM GENERATION
 ============================================
-- generate items regularly (add timer)
+14 - Item automatic generation
+    > add counter variable for generation
+    > add constant for generation interval
+    > Update method that is called when pressing SPACE (give deltatime in parameter)
+    > generate items regularly (add timer)
 
 ============================================
-END OF GAME CONDITION
+END OF GAME
 ============================================
-- create end of game function (variable for ready/running/ended) that checks there is no more life
-- only generates items if game is running and not ended
-- allow START button or SPACE bar key to start a game (generation starts) : only when game is not running
-- display start message when ready to play (waiting for start button)
+15 - end management
+    > state variable with 3 states "ready/running/finished"
+    > create isRunning, isReady, isFinished, startGame, stopGame, rewindGame functions
+    > Function that checks any key press or any button pressed to switch from "finished" state to "ready" state
+    > start button or ENTER to go from "ready" to "running"
+    > only generates items if game is running and not ended
+    > only catch items if in running state
+
+16 - display HUD (text)
+    > display start message when "ready" to play (waiting for start button)
+    > display end message (with score) when finished
+    > make the start message blink using the system time (e.g. one second period)
 
 ============================================
-HIGH SCORE
+HIGH SCORES
 ============================================
-- read a file to get high scores
-- display high scores at game start
-- update (save) high scores in file when a game is ended and display them again
-
+17 - Handle high scores
+    > read a file to get high scores (use of pickle)
+    > display high scores at game start
+    > save high scores in file when a game is ended (use pickle)
+    > only keep the 10 greatest values
 
 ============================================
 SOUNDS
 ============================================
-- play sound when catching an item
-- play sound when missing an item
-- play sound when game is finished (may be two sounds, 1 when finished, 1 when high socre is exceeded)
-
-----------------------------
-
-============================================
-LIFE DISPLAY
-============================================
-- add life bar sprites
-- function to display bar according to life variable
-- modify color according to life (from red to green)
+18 - handle sounds
+    > Create and play sound when catching an item
+    > Create and play sound when missing an item
 
 
 
 ============================================
-FEATURES
+DISPLAY FEATURES
 ============================================
-time freeze (time-limited) + display icon/gauge/cooldown
-----------------------------
-higher speed (time-limited) + display icon/gauge/cooldown
-----------------------------
+101 - Make the items turn
+    > use the angle property of the sprite object to make the items turn
+
+102 - Visual effects
+    > create particle effect or sprite animation when catching an item
+    > create particle effect or sprite animation when missing  an item
+    > create particle effect when character is moving
+
+103 - Use of sprites to display a life bar
+    > add life bar sprites
+    > function to display bar according to life variable
+    > modify color according to life using "filterColor" (e.g. from red to green)
+
+103 - Create parallax background
+    > compute offset for each layer
+    > display layers in correct order + exclude some displays depending on game play (front layer displayed after character, ...)
+    > modify item positions according to parallax offset (each item must have a xRef value) + bursts
+
+104 - Add some random clouds
+    > function to generate clouds periodically
+    > each cloud has a different appearance and a speed value
+    > each cloud has to be parallax-compatible (x position reference)
 
 
 
+============================================
+GAME FEATURES
+============================================
+201 + Make the items go up and down
+    > make the items first go up while the collision is not enabled
+    > the item may be darker or more transparent
+    > when the item reached the top of the screen it goes back down (and collision is now enabled to catch it)
+    > speed of the item is still used
+    > use of an additional variable (boolean) or time reference (float) to know if the item has to go up or down
 
-----------------------------
-- Add particle emitter or sprite animation when catching an item
-----------------------------
-- Add particle emitter or sprite animation when missing an item
-----------------------------
-- Add particle emitter when character is moving
-----------------------------
-- Add parallax system
-- compute offset for each layer
-- display layers in correct order + exclude some displays depending on game play (front layer after character, ...)
-- modify item positions according to parallax offset (!!)
-----------------------------
+202 - make the player goes fast
+    > enabled when holding key/button (e.g. SPACE or any button, but not MENU button nor ENTER key)
+    > when enabled, changing direction is not possible anymore
 
+203 - Use of pseudo random
+    > code your own pseudo random number generator
+    > use it to generate item X reference positions in always the same order
+    >

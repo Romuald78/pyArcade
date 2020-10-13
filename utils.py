@@ -55,24 +55,31 @@ def createAnimatedSprite(params):
     spriteBox     = params["spriteBox" ]
     startIndex    = params["startIndex"]
     endIndex      = params["endIndex"  ]
-    frameduration = 1/60 if "frameDuration" not in params else params["frameDuration"]
-    size          = None if "size" not in params else params["size"]
-    isMaxRatio    = False if "isMaxRatio" not in params else params["isMaxRatio"]
+    frameduration = 1/60   if "frameDuration" not in params else params["frameDuration"]
+    size          = None   if "size"          not in params else params["size"]
+    isMaxRatio    = False  if "isMaxRatio"    not in params else params["isMaxRatio"]
+    flipH         = False  if "flipH"         not in params else params["flipH"]
+    flipV         = False  if "flipv"         not in params else params["flipV"]
+    position      = (0, 0) if "position"      not in params else params["position"]
+    filterColor   = (255, 255, 255, 255) if "filterColor" not in params else params["filterColor"]
 
     # get sprite box (nb sprites X, nb Y, size X size Y)
     nbX, nbY, szW, szH = spriteBox
     # Instanciate sprite object
     spr = arcade.AnimatedTimeSprite()
+    spr.color = filterColor
     # Read Horizontal first, then vertical
     for y in range(nbY):
         for x in range(nbX):
             index = x + y*nbX
             # add index only if in range
             if index >= startIndex and index <= endIndex:
-                tex = arcade.load_texture(filePath, x * szW, y * szH, szW, szH)
+                tex = arcade.load_texture(filePath, x * szW, y * szH, szW, szH, flipped_horizontally=flipH, flipped_vertically=flipV)
                 spr.textures.append(tex)
     # set dimensions
     spr.update_animation()
+    spr.center_x = position[0]
+    spr.center_y = position[1]
     if size != None:
         if isMaxRatio:
             ratio = max(size[0]/spr.width, size[1]/spr.height)
@@ -121,27 +128,37 @@ def createParticleBurst(params):
 
 def createParticleEmitter(params):
     # retrieve parameters
-    x0            = params["x0"         ]
-    y0            = params["y0"         ]
-    partNB        = params["partNB"     ]
-    partSize      = params["partSize"   ]
-    partScale     = params["partScale"  ]
-    partSpeed     = params["partSpeed"  ]
-    maxLifeTime   = params["maxLifeTime"]
-    color         = params["color"      ]
-    startAlpha    = params["startAlpha" ]
-    endAlpha      = params["endAlpha"   ]
-    textureFile   = None if "textureFile" not in params else params["textureFile"]
+    x0            = params["x0"          ]
+    y0            = params["y0"          ]
+    partNB        = params["partNB"      ]
+    partSize      = params["partSize"    ]
+    partScale     = params["partScale"   ]
+    partSpeed     = params["partSpeed"   ]
+    maxLifeTime   = params["maxLifeTime" ]
+    color         = params["color"       ]
+    startAlpha    = params["startAlpha"  ]
+    endAlpha      = params["endAlpha"    ]
+    textureFile   = None  if "textureFile"  not in params else params["textureFile"]
+    flipH         = False if "flipH"        not in params else params["flipH"]
+    flipV         = False if "flipv"        not in params else params["flipV"]
+    spriteBox     = None  if "spriteBox"    not in params else params["spriteBox"]
+    spriteSelect  = None  if "spriteSelect" not in params else params["spriteSelect"]
 
     # Prepare Texture
     if textureFile == None:
-        textureFile = arcade.make_circle_texture(partSize, color)
+        tex = arcade.make_circle_texture(partSize, color)
+    else:
+        nbX, nbY, szW, szH = spriteBox
+        x, y = spriteSelect
+        tex = arcade.load_texture(textureFile, x * szW, y * szH, szW, szH,
+                                  flipped_horizontally=flipH,
+                                  flipped_vertically=flipV)
     # Create emitter
     e = arcade.Emitter(
         center_xy        = (x0, y0),
         emit_controller  = arcade.EmitMaintainCount(partNB),
         particle_factory = lambda emitter: arcade.FadeParticle(
-            filename_or_texture = textureFile,
+            filename_or_texture = tex,
             change_xy           = arcade.rand_in_circle( (0.0,0.0), partSpeed),
             lifetime            = uniform(maxLifeTime/40,maxLifeTime),
             scale = partScale,

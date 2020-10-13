@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sounds/bleep.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/crash.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/error.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/zip.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/girl_fix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/ninja_fix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/penguin_fix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/troll_fix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/characters/witch_fix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_REF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/items/clouds_384x128.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/items/clouds.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/items/splash_192x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/items/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/parallax/city/city7.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/city/city7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/cake/cake1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/cake/cake2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/cake/cake4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/cake/cake5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/parallax/cake/parallax6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/parallax/cake/cake6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds/bling.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sounds/bling.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
@@ -25,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="328" lean-forward="true" selection-start-line="328" selection-end-line="328" />
+            <state relative-caret-position="381">
+              <caret line="706" column="18" lean-forward="true" selection-start-line="706" selection-start-column="18" selection-end-line="706" selection-end-column="18" />
               <folding>
                 <element signature="e#222#235#0" expanded="true" />
               </folding>
@@ -37,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2162">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -49,20 +54,11 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="137">
+              <caret line="137" column="9" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="9" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/arcade/text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6946">
-              <caret line="312" column="15" selection-start-line="312" selection-start-column="7" selection-end-line="312" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -78,36 +74,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>missBurst.append</find>
+      <find>createMiss</find>
+      <find>Item</find>
+      <find>bursts</find>
+      <find>drawScaore</find>
+      <find>update_anima</find>
+      <find>fixedS</find>
+      <find>updateParal</find>
+      <find>getPar</find>
+      <find>MIN</find>
+      <find>animatedS</find>
+      <find>getParal</find>
+      <find>updateCloud</find>
+      <find>CLOUDS_</find>
+      <find>CLOUD_²</find>
+      <find>alpha</find>
+      <find>updateClou</find>
+      <find>CLOUD_RANGE_HEIGHT</find>
+      <find>.remove(cl</find>
       <find>SPEED</find>
-      <find>col</find>
-      <find>drawC</find>
-      <find>candies</find>
-      <find>position</find>
-      <find>[&quot;move</find>
-      <find>idle&quot;</find>
-      <find>random</find>
-      <find>self.burst</find>
-      <find>charEmitter</find>
-      <find>remove(em</find>
-      <find>remove</find>
-      <find>drawburs</find>
-      <find>ghost2</find>
-      <find>print(b</find>
-      <find>night</find>
-      <find>createcand</find>
-      <find>candie</find>
-      <find>createCan</find>
-      <find>girl</find>
-      <find>createCand</find>
-      <find>creategho</find>
-      <find>createfix</find>
-      <find>destro</find>
-      <find>anchor_x</find>
-      <find>anchor_y</find>
-      <find>draw(</find>
-      <find>collide</find>
-      <find>collid</find>
-      <find>loseS</find>
+      <find>createCl</find>
+      <find>generateCl</find>
+      <find>self.tim</find>
+      <find>self.cloudT</find>
+      <find>CLOUD_</find>
+      <find>self.genera</find>
+      <find>self.moves</find>
+      <find>particle</find>
+      <find>deltaMove</find>
+      <find>generateClou</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,9 +126,10 @@
         <option value="$PROJECT_DIR$/StudentCode.py" />
         <option value="$PROJECT_DIR$/snake.py" />
         <option value="$PROJECT_DIR$/Launcher.py" />
-        <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/process_REF.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/process.py" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -148,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,30 +160,13 @@
             <path>
               <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
               <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="parallax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyArcade" type="462c0819:PsiDirectoryNode" />
               <item name="sounds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -196,21 +175,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Romuald GRIGNON/Development/Education/pyArcade/todo.txt" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade" />
-      <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade\venv\games" />
-      <recent name="C:\Workspace\MicroEntreprise\AtelierPython\pyArcade\venv" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade" />
       <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade\venv\Scripts" />
       <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade\venv" />
       <recent name="C:\Workspace\MicroEntreprise\AtelierPython\pyArcade\venv" />
       <recent name="C:\Workspace\MicroEntreprise\AtelierPython\pyArcade\venv\Scripts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade" />
+      <recent name="C:\Romuald GRIGNON\Development\Education\pyArcade\venv\games" />
+      <recent name="C:\Workspace\MicroEntreprise\AtelierPython\pyArcade\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,23 +251,23 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15437302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15437302" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28213507" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28213507" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -334,6 +314,11 @@
           <url>file://$PROJECT_DIR$/venv/games/CatchTheGems.py</url>
           <line>3</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/process.py</url>
+          <line>451</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -342,83 +327,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/StudentCode.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/games/VerticalShooter.py" />
-    <entry file="file://$PROJECT_DIR$/venv/games/CatchTheGems.py" />
-    <entry file="file://$PROJECT_DIR$/Launcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2275">
-          <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StudentCode.py" />
     <entry file="file://$PROJECT_DIR$/Launcher.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -529,24 +441,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/arcade/texture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="434" selection-start-line="434" selection-end-line="434" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
           <caret line="2861" column="11" selection-start-line="2861" selection-start-column="7" selection-end-line="2861" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
@@ -557,23 +455,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/process_REF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="19" selection-start-line="19" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6808">
+          <caret line="298" selection-start-line="285" selection-end-line="298" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/arcade/texture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9522">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/interface/bar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/interface/barElt.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/cake/cake5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/winter/winter06.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/winter/winter05.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/winter/winter04.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/night/night6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/night/night5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/cake/cake6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/cake/cake1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/country/country1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/country/country3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/country/country4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/country/country5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/parallax/country/country6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/items/shuriken.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/items/clouds.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="706" column="18" lean-forward="true" selection-start-line="706" selection-start-column="18" selection-end-line="706" selection-end-column="18" />
+          <folding>
+            <element signature="e#222#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="137">
+          <caret line="137" column="9" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="9" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process.py">
+    <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="328" lean-forward="true" selection-start-line="328" selection-end-line="328" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
