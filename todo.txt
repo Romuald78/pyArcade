@@ -1,5 +1,9 @@
 /!\ update utils to make the particle effect use filterColored texture
 /!\ create documentation for utils.py
+/!\ add context (procedural not object)
+/!\ add presentation of game loop and calls to functions init() setup() update() draw() etc...
+/!\ add documentation on onKeyEvent/onButtonEvent/onAxisEvent data (names of axis or buttons, ...)
+
 
 ============================================
 MAIN
@@ -18,29 +22,29 @@ MAIN
 ============================================
 SINGLE SPRITE MOVE
 ============================================
- 1 - single sprite + draw (creation + draw)
+ 1 ) single sprite + draw (creation + draw)
     > constants size of char(W,H)
     > createCharacter()
     > drawCharacter()
 
- 2 - add position variable + update center_x/center_y
+ 2 ) add position variable + update center_x/center_y
    - key event to update position + update sprite onto position + draw sprite
     > add position
     > add key pressed (move is not smooth)
     > add moves booleans + SPEED + deltaTime parameter
     > add update position and update keypress code
 
- 3 - add limitation on screen borders
+ 3 ) add limitation on screen borders
     > update updateCharacter function
 
- 4 - controller event to update position
+ 4 ) controller event to update position
     > just update gamepad event function using axis "X" and analog value > 0.5
 
 ============================================
 BACKGROUND DISPLAY
 ============================================
- 5 - add background sprite (HD ratio)
-    > Create sprite abec display it (create/draw)
+ 5 ) add background sprite (HD ratio)
+    > Create sprite and display it (create/draw)
 
 ============================================
 ANIMATED CHARACTER
