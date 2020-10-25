@@ -625,6 +625,19 @@ class Process:
         self.initParticleEffects()
         self.initClouds()
 
+        # params = {
+        #     "filePath"      : f"images/characters/ninja.png",
+        #     "spriteBox"     : (7,1,120,120),
+        #     "startIndex"    : 1,
+        #     "endIndex"      : 6,
+        #     "frameDuration" : 1/15,
+        #     "size"          : (self.CHAR_W, self.CHAR_H),
+        #     "flipH"         : False
+        # }
+        # self.TEST = createAnimatedSprite(params)
+        # self.TEST.center_x = 200
+        # self.TEST.center_y = 200
+        # self.TEST.repeat_count_x = 1
 
 
     ### ====================================================================================================
@@ -650,6 +663,8 @@ class Process:
         self.updateClouds(deltaTime)
 
 
+        # self.TEST.update_animation()
+
     ### ====================================================================================================
     ### RENDERING
     ### ====================================================================================================
@@ -667,6 +682,8 @@ class Process:
         self.drawBackGround((0,1,2,3,4))
         self.drawHUD()
 
+
+        # self.TEST.draw()
 
 
     ### ====================================================================================================
@@ -725,5 +742,23 @@ class Process:
             else:
                 self.moveCharacter("left" , False)
                 self.moveCharacter("right", False)
+
+
+
+    ### ====================================================================================================
+    ### MOUSE MOTION EVENTS
+    ### ====================================================================================================
+    def mouseMotionEvent(self,x,y,dx,dy):
+        print(f"MOUSE MOTION : x={x}/y={y} dx={dx}/dy={dy}")
+
+
+
+    ### ====================================================================================================
+    ### MOUSE BUTTON EVENTS
+    ### ====================================================================================================
+    def mouseButtonEvent(self,x,y,buttonNum,isPressed):
+        print(f"MOUSE BUTTON : x={x}/y={y} buttonNum={buttonNum} isPressed={isPressed}")
+
+
 
 

@@ -4,6 +4,10 @@
 /!\ add presentation of game loop and calls to functions init() setup() update() draw() etc...
 /!\ add documentation on onKeyEvent/onButtonEvent/onAxisEvent data (names of axis or buttons, ...)
 
+set_texture for "freezed" AnimatedSprite (do not use update_animation)
+can_reap for burst particle emitter
+
+
 
 ============================================
 MAIN

@@ -54,6 +54,7 @@ class MyGame(arcade.Window):
         self.onAxisMove(idx, axis, value)
 
 
+
     # ----------------------------------
     # CONSTRUCTOR
     # ----------------------------------
@@ -168,6 +169,26 @@ class MyGame(arcade.Window):
             analogValue = -analogValue
         self.process.onAxisEvent(gamepadNum,axisName.upper(),analogValue)
         #- - - - - - - - - - - - - - - - - - - - - - - - -#
+
+
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    # MOUSE MOTION events
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    def on_mouse_motion(self, x, y, dx, dy):
+        self.process.mouseMotionEvent(x,y,dx,dy)
+
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    # MOUSE BUTTON PRESSED events
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    def on_mouse_press(self, x, y, button, modifiers):
+        self.process.mouseButtonEvent(x,y,button,True)
+
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    # MOUSE BUTTON RELEASED events
+    # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    def on_mouse_release(self, x, y, button, modifiers):
+        self.process.mouseButtonEvent(x,y,button,False)
+
 
 
 ### ====================================================================================================
