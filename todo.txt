@@ -1,10 +1,17 @@
 /!\ update utils to make the particle effect use filterColored texture
-/!\ create documentation for utils.py
-/!\ add context (procedural not object)
+
+/!\ create documentation for utils.py (add into PDF ?)
+
+/!\ add install of environment (pycharm, retrieve files from zip, install arcade, 1st run)
+/!\ add context (procedural not object) +
 /!\ add presentation of game loop and calls to functions init() setup() update() draw() etc...
+/!\ add description of sprites objects (fields and methods)
+/!\ add description for sounds (play method)
 /!\ add documentation on onKeyEvent/onButtonEvent/onAxisEvent data (names of axis or buttons, ...)
 
-set_texture for "freezed" AnimatedSprite (do not use update_animation)
+/!\ add description for parallax
+
+set_texture field for "freezed" AnimatedSprite (do not use update_animation)
 can_reap for burst particle emitter
 
 
@@ -59,11 +66,11 @@ ANIMATED CHARACTER
 
  7 - load animation idle and store both in memory : update one of them according to movement
     > modify updateCharacter function to do that
-    > Load also flipped_horizontal animations in memory
 
  8 - add variable to store last move direction
+    > Load also flipped_horizontal animations in memory
     > modify last direction when moving in one direction
-    > use last direction to select correct animation
+    > use last direction and moving variables to select correct animation (1 out of 4)
 
 ============================================
 ITEMS
