@@ -1,18 +1,26 @@
+============================================
+DONE
+============================================
+/!\ add context (procedural not object) +
+/!\ add presentation of game loop and calls to functions init() setup() update() draw() etc...
+Stories
+
+============================================
+TODO
+============================================
 /!\ update utils to make the particle effect use filterColored texture
 
 /!\ create documentation for utils.py (add into PDF ?)
 
 /!\ add install of environment (pycharm, retrieve files from zip, install arcade, 1st run)
-/!\ add context (procedural not object) +
-/!\ add presentation of game loop and calls to functions init() setup() update() draw() etc...
 /!\ add description of sprites objects (fields and methods)
 /!\ add description for sounds (play method)
 /!\ add documentation on onKeyEvent/onButtonEvent/onAxisEvent data (names of axis or buttons, ...)
 
 /!\ add description for parallax
-
 set_texture field for "freezed" AnimatedSprite (do not use update_animation)
 can_reap for burst particle emitter
+
 
 
 
@@ -86,10 +94,16 @@ ITEMS
     > update function to make the item goes down (@speed)
     > remove item when leaving area (bottom)
 
+11 - Item automatic generation
+    > add counter variable for generation
+    > add constant for generation interval
+    > Update method that is called when pressing SPACE (give deltatime in parameter)
+    > generate items regularly (add timer)
+
 ============================================
 BOX COLLISION
 ============================================
-11 - box collisions between items and character
+12 - box collisions between items and character
     > creat box/box collision function
     > create variables for item and char sizes (or ratio from sprite sizes)
     > add function that checks collisions and remove items when colliding with player
@@ -97,24 +111,15 @@ BOX COLLISION
 ============================================
 SCORE and LIFE
 ============================================
-12 - Score management
+13 - Score management
     > add score variable
     > update score when player catches items (when collision is ok)
     > add score text display
 
-13 - Life Management
+14 - Life Management
     > add Life variable + init life constant
     > update life when item leaves area
     > add life text display
-
-============================================
-ITEM GENERATION
-============================================
-14 - Item automatic generation
-    > add counter variable for generation
-    > add constant for generation interval
-    > Update method that is called when pressing SPACE (give deltatime in parameter)
-    > generate items regularly (add timer)
 
 ============================================
 END OF GAME
@@ -133,6 +138,14 @@ END OF GAME
     > make the start message blink using the system time (e.g. one second period)
 
 ============================================
+SOUNDS
+============================================
+18 - handle sounds
+    > Create and play sound when catching an item
+    > Create and play sound when missing an item
+
+
+============================================
 HIGH SCORES
 ============================================
 17 - Handle high scores
@@ -141,12 +154,6 @@ HIGH SCORES
     > save high scores in file when a game is ended (use pickle)
     > only keep the 10 greatest values
 
-============================================
-SOUNDS
-============================================
-18 - handle sounds
-    > Create and play sound when catching an item
-    > Create and play sound when missing an item
 
 
 
