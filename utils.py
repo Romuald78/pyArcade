@@ -52,16 +52,16 @@ def createFixedSprite(params):
 def createAnimatedSprite(params):
     # retrieve parameters
     filePath      = params["filePath"  ]
+    size          = None if "size" not in params else params["size"]
+    filterColor   = (255, 255, 255, 255) if "filterColor" not in params else params["filterColor"]
+    isMaxRatio    = False  if "isMaxRatio"    not in params else params["isMaxRatio"]
+    position      = (0, 0) if "position"      not in params else params["position"]
     spriteBox     = params["spriteBox" ]
     startIndex    = params["startIndex"]
     endIndex      = params["endIndex"  ]
     frameduration = 1/60   if "frameDuration" not in params else params["frameDuration"]
-    size          = None   if "size"          not in params else params["size"]
-    isMaxRatio    = False  if "isMaxRatio"    not in params else params["isMaxRatio"]
     flipH         = False  if "flipH"         not in params else params["flipH"]
     flipV         = False  if "flipv"         not in params else params["flipV"]
-    position      = (0, 0) if "position"      not in params else params["position"]
-    filterColor   = (255, 255, 255, 255) if "filterColor" not in params else params["filterColor"]
 
     # get sprite box (nb sprites X, nb Y, size X size Y)
     nbX, nbY, szW, szH = spriteBox
