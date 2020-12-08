@@ -15,8 +15,8 @@ def drawText(params):
     message = params["message"]
     size    = 12                if "size"   not in params else params["size"  ]
     color   = (255,255,255,255) if "color"  not in params else params["color" ]
-    alignH  = "center"          if "alignH" not in params else params["alignH"]        # left, center, right
-    alignV  = "center"          if "alignV" not in params else params["alignV"]        # top, center, bottom
+    alignH  = "center"          if "alignH" not in params else params["alignH"]    # left, center, right
+    alignV  = "center"          if "alignV" not in params else params["alignV"]    # top, center, bottom
     angle   = 0                 if "angle"  not in params else params["angle" ]
     bold    = False             if "bold"   not in params else params["bold"  ]
     italic  = False             if "italic" not in params else params["italic"]
@@ -98,8 +98,6 @@ def createParticleBurst(params):
     # retrieve parameters
     x0            = params["x0"           ]
     y0            = params["y0"           ]
-    partInterval  = params["partInterval" ]
-    totalDuration = params["totalDuration"]
     partSize      = params["partSize"     ]
     partScale     = params["partScale"    ]
     partSpeed     = params["partSpeed"    ]
@@ -107,6 +105,9 @@ def createParticleBurst(params):
     startAlpha    = params["startAlpha"   ]
     endAlpha      = params["endAlpha"     ]
     imagePath     = None if "imagePath" not in params else params["imagePath"]
+
+    partInterval  = params["partInterval" ]
+    totalDuration = params["totalDuration"]
 
     # create particle emitter
     e = arcade.Emitter(
@@ -130,27 +131,28 @@ def createParticleEmitter(params):
     # retrieve parameters
     x0            = params["x0"          ]
     y0            = params["y0"          ]
-    partNB        = params["partNB"      ]
     partSize      = params["partSize"    ]
     partScale     = params["partScale"   ]
     partSpeed     = params["partSpeed"   ]
-    maxLifeTime   = params["maxLifeTime" ]
     color         = params["color"       ]
     startAlpha    = params["startAlpha"  ]
     endAlpha      = params["endAlpha"    ]
-    textureFile   = None  if "textureFile"  not in params else params["textureFile"]
+    imagePath     = None  if "imagePath"  not in params else params["imagePath"]
+
+    partNB        = params["partNB"      ]
+    maxLifeTime   = params["maxLifeTime" ]
     flipH         = False if "flipH"        not in params else params["flipH"]
     flipV         = False if "flipv"        not in params else params["flipV"]
     spriteBox     = None  if "spriteBox"    not in params else params["spriteBox"]
     spriteSelect  = None  if "spriteSelect" not in params else params["spriteSelect"]
 
     # Prepare Texture
-    if textureFile == None:
+    if imagePath == None:
         tex = arcade.make_circle_texture(partSize, color)
     else:
         nbX, nbY, szW, szH = spriteBox
         x, y = spriteSelect
-        tex = arcade.load_texture(textureFile, x * szW, y * szH, szW, szH,
+        tex = arcade.load_texture(imagePath, x * szW, y * szH, szW, szH,
                                   flipped_horizontally=flipH,
                                   flipped_vertically=flipV)
     # Create emitter
