@@ -137,14 +137,15 @@ def createParticleEmitter(params):
     color         = params["color"       ]
     startAlpha    = params["startAlpha"  ]
     endAlpha      = params["endAlpha"    ]
-    imagePath     = None  if "imagePath"  not in params else params["imagePath"]
 
     partNB        = params["partNB"      ]
     maxLifeTime   = params["maxLifeTime" ]
-    flipH         = False if "flipH"        not in params else params["flipH"]
-    flipV         = False if "flipv"        not in params else params["flipV"]
-    spriteBox     = None  if "spriteBox"    not in params else params["spriteBox"]
-    spriteSelect  = None  if "spriteSelect" not in params else params["spriteSelect"]
+
+    imagePath     = None  if "imagePath"  not in params else params["imagePath"]
+    spriteBox     = None if "spriteBox" not in params else params["spriteBox"]
+    spriteSelect  = None if "spriteSelect" not in params else params["spriteSelect"]
+    flipH = False if "flipH" not in params else params["flipH"]
+    flipV = False if "flipv" not in params else params["flipV"]
 
     # Prepare Texture
     if imagePath == None:

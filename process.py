@@ -469,7 +469,7 @@ class Process:
                     "endAlpha"    : 0,
                     "spriteBox"   : (7,1,120,120),
                     "spriteSelect": (6,0),
-                    "textureFile" : "images/characters/ninja.png"
+                    "imagePath"   : "images/characters/ninja.png"
         }
         self.charEmitterRight= createParticleEmitter(paramPE)
         paramPE["flipH"] = True
