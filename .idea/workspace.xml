@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/UE_Libre_Jeu_Arcade_Documentation.odp" beforeDir="false" afterPath="$PROJECT_DIR$/doc/UE_Libre_Jeu_Arcade_Documentation.odp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +15,8 @@
       <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="465" column="39" selection-start-line="465" selection-start-column="39" selection-end-line="465" selection-end-column="39" />
+            <state relative-caret-position="343">
+              <caret line="40" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" />
               <folding>
                 <element signature="e#222#235#0" expanded="true" />
               </folding>
@@ -49,7 +45,7 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="3976">
               <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
             </state>
           </provider>
@@ -75,7 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>createCl</find>
       <find>generateCl</find>
       <find>self.tim</find>
       <find>self.cloudT</find>
@@ -105,6 +100,7 @@
       <find>sndTake</find>
       <find>drawCharE</find>
       <find>charemi</find>
+      <find>drawTex</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -617,15 +613,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="3976">
           <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="465" column="39" selection-start-line="465" selection-start-column="39" selection-end-line="465" selection-end-column="39" />
+        <state relative-caret-position="343">
+          <caret line="40" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" />
           <folding>
             <element signature="e#222#235#0" expanded="true" />
           </folding>
