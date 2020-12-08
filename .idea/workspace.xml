@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="" />
+    <list default="true" id="000aba0c-1b5a-4d85-ab87-dd07ea44aa2d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/UE_Libre_Jeu_Arcade_2020.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +20,7 @@
         <entry file="file://$PROJECT_DIR$/process.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
-              <caret line="40" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" />
-              <folding>
-                <element signature="e#222#235#0" expanded="true" />
-              </folding>
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -142,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,7 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -251,13 +252,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15416667" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38788524" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38788524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -311,11 +312,6 @@
           <url>file://$PROJECT_DIR$/venv/games/CatchTheGems.py</url>
           <line>3</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/process.py</url>
-          <line>473</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -332,9 +328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20916">
           <caret line="747" lean-forward="true" selection-start-line="747" selection-end-line="747" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -363,9 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19068">
           <caret line="685" column="10" selection-start-line="685" selection-start-column="10" selection-end-line="685" selection-end-column="10" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -394,9 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15755">
           <caret line="685" column="10" selection-start-line="685" selection-start-column="10" selection-end-line="685" selection-end-column="10" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -425,9 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16238">
           <caret line="706" column="18" lean-forward="true" selection-start-line="706" selection-start-column="18" selection-end-line="706" selection-end-column="18" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,20 +546,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/process_REF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" selection-start-line="19" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/save_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6808">
-          <caret line="298" selection-start-line="285" selection-end-line="298" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/process_REF.py" />
+    <entry file="file://$PROJECT_DIR$/save_process.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/arcade/texture.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9522">
@@ -621,10 +593,7 @@
     <entry file="file://$PROJECT_DIR$/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
-          <caret line="40" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="40" />
-          <folding>
-            <element signature="e#222#235#0" expanded="true" />
-          </folding>
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
