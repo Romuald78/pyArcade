@@ -64,7 +64,7 @@ class MyGame(arcade.Window):
         # init process object
         self.process = Process()
         # set application window background color
-        arcade.set_background_color(arcade.color.BLACK)
+        arcade.set_background_color(arcade.color.BOTTLE_GREEN)
         # Store gamepad list
         self.gamepads = arcade.get_joysticks()
         # check every connected gamepad
